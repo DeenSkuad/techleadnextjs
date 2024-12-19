@@ -1,14 +1,14 @@
 export const siteConfig = {
   name: "Tech Lead",
   url: "https://techlead.my",
-  getStartedUrl:
-    "https://launchuicomponents.com/docs/getting-started/introduction",
-  ogImage: "https://launchuicomponents.com/og.jpg",
+  getStartedUrl: "https://techlead.my",
+  ogImage: "/og.jpg",
   description:
-    "Landing page template built with React, Shadcn/ui and Tailwind that you can copy/paste into your project.",
+    "Tech Lead - Empowering Digital Innovation. We specialize in web development, mobile apps, and digital solutions for modern businesses.",
   links: {
-    twitter: "https://twitter.com/mikolajdobrucki",
-    github: "https://github.com/launch-ui/launch-ui",
+    twitter: "https://twitter.com/techlead_my",
+    github: "https://github.com/deenskuad",
+    email: "mailto:mhydinayub@gmail.com"
   },
 };
 
