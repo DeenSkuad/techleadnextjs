@@ -13,7 +13,7 @@ export default function products() {
 
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-4 lg:grid-cols-3">
         <WobbleCard
-          containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+          containerClassName="col-span-1 lg:col-span-2 h-full  min-h-[500px] lg:min-h-[300px]"
           className=""
         >
           <div className="max-w-xs">
@@ -41,7 +41,7 @@ export default function products() {
             Simplify your online sales process with our E-commerce POS system in Malaysia.
           </p>
         </WobbleCard>
-        <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+        <WobbleCard containerClassName="col-span-1 lg:col-span-3  min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
           <div className="max-w-sm">
             <h2 className="max-w-sm text-balance text-left text-base font-semibold tracking-[-0.015em] text-white md:max-w-lg md:text-xl lg:text-3xl">
               HRMS & Payroll System
@@ -70,7 +70,7 @@ export default function products() {
           </p>
         </WobbleCard>
         <WobbleCard
-          containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+          containerClassName="col-span-1 lg:col-span-2 h-full  min-h-[500px] lg:min-h-[300px]"
           className=""
         >
           <div className="max-w-xs">
