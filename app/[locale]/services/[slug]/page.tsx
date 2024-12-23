@@ -10,7 +10,7 @@ import Footer from "@/components/sections/footer/default";
 import { notFound } from "next/navigation";
 
 export default function ServicePage({
-  params: { locale, slug }
+  params: { slug }
 }: {
   params: { locale: string; slug: string }
 }) {
