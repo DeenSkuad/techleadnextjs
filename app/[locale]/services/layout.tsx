@@ -1,11 +1,13 @@
-import { PageTransition } from "@/components/PageTransition";
 
-export default function ServiceLayout({
-  children,
-  params: { locale }
+
+export default function ServicesLayout({
+  children
 }: {
   children: React.ReactNode;
-  params: { locale: string };
 }) {
-  return <PageTransition>{children}</PageTransition>;
+  return (
+    <div>
+      {children}
+    </div>
+  );
 } 

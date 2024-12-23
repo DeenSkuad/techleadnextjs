@@ -10,15 +10,13 @@ import Footer from "@/components/sections/footer/default";
 import Services from "@/components/sections/services/default";
 import Works from "@/components/sections/works/default";
 import Products from "@/components/sections/products/default";
-import { useTranslations } from 'next-intl';
+// import { useTranslations } from 'next-intl';
 
 export default function Home({
-  params: { locale }
+  // params: { locale }
 }: {
   params: { locale: string }
 }) {
-  const t = useTranslations();
-
   return (
     <main className="bg-background text-foreground">
       <Navbar />
