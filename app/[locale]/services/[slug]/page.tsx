@@ -1,50 +1,43 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+import { navigationItems } from "@/config/navigation";
 import { AnimatedTitle } from "@/components/AnimatedTitle";
 import { AnimatedDescription } from "@/components/AnimatedDescription";
-import { navigationItems } from "@/config/navigation";
-import Link from "next/link";
 import Navbar from "@/components/sections/navbar/default";
 import CTA from "@/components/sections/cta/default";
 import Footer from "@/components/sections/footer/default";
-
-
-export function generateStaticParams() {
-  return navigationItems.services.map((service) => ({
-    slug: service.slug,
-  }));
-}
+import { notFound } from "next/navigation";
 
 export default function ServicePage({
-  params,
+  params: { locale, slug }
 }: {
-  params: { slug: string };
+  params: { locale: string; slug: string }
 }) {
-  const serviceInfo = navigationItems.services.find(
-    service => service.slug === params.slug
-  );
+  const t = useTranslations();
   
-  if (!serviceInfo) return null;
+  const serviceInfo = navigationItems.services.find(
+    (service) => service.slug === slug
+  );
+
+  if (!serviceInfo) {
+    notFound();
+  }
 
   return (
-    <div className="">
+    <div className="min-h-screen">
       <Navbar />
       <div className="py-20 px-4">
         <AnimatedTitle>
           <h1 className="text-4xl md:text-6xl font-bold text-center text-slate-200">
-            {serviceInfo.title}
+            {t(`services.${serviceInfo.slug}.title`)}
           </h1>
         </AnimatedTitle>
         <AnimatedDescription>
-          {serviceInfo.description}
+          <p className="text-center text-slate-400 mt-4 max-w-2xl mx-auto">
+            {t(`services.${serviceInfo.slug}.description`)}
+          </p>
         </AnimatedDescription>
-      </div>
-
-      <div className="text-center py-12">
-        <Link 
-          href="/services" 
-          className="text-blue-400 hover:text-blue-300 transition-colors"
-        >
-          ← Back to All Services
-        </Link>
       </div>
       <CTA />
       <Footer />

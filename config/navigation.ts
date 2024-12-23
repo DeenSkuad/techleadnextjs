@@ -1,32 +1,44 @@
 // src/config/navigation.ts
+interface ServiceItem {
+  title: string;
+  slug: string;
+  href: string;
+  description: string;
+}
+
 export const navigationItems = {
   services: [
     {
       title: "Web Development",
       slug: "webdevelopment",
-      href: "/services/webdevelopment"
+      href: "/services/webdevelopment",
+      description: "We build custom websites for businesses of all sizes"
     },
     {
       title: "Cyber Security",
       slug: "cybersecurity",
-      href: "/services/cybersecurity"
+      href: "/services/cybersecurity",
+      description: "We provide cyber security services to protect your business"
     },
     {
       title: "UI/UX Design",
       slug: "uiuxdesign",
-      href: "/services/uiuxdesign"
+      href: "/services/uiuxdesign",
+      description: "Create user-friendly and visually appealing websites"
     },
     {
       title: "Training",
       slug: "training",
-      href: "/services/training"
+      href: "/services/training",
+      description: "FE & BE training for your internal team"
     },
     {
       title: "Consulting",
       slug: "consulting",
-      href: "/services/consulting"
+      href: "/services/consulting",
+      description: "We provide consulting services to help improve your business"
     }
-  ],
+  ] as ServiceItem[],
   products: [
     {
       title: "Asset Management",
