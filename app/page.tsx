@@ -6,16 +6,17 @@ import FAQ from "../components/sections/faq/default";
 import CTA from "../components/sections/cta/default";
 import Footer from "../components/sections/footer/default";
 import Services from "../components/sections/services/default";
-import Products from "../components/sections/works/default";
-
+import Works from "../components/sections/works/default";
+import Products from "../components/sections/products/default";
 export default function Home() {
   return (
     <main className="bg-background text-foreground">
       <Navbar />
       <Hero />
       <Services />
-      <Products />
+      <Works />
       <Logos />
+      <Products />
       <Items />
       <FAQ />
       <CTA />

@@ -7,11 +7,19 @@ import { Section } from "../../ui/section";
 // import { Mockup, MockupFrame } from "../../ui/mockup";
 // import Glow from "../../ui/glow";
 // import Image from "next/image";
-import { siteConfig } from "@/config/site";
+// import { siteConfig } from "@/config/site";
 // import { useTheme } from "next-themes";
 import Github from "../../logos/github";
 // import dynamic from 'next/dynamic';
 import Spline from "@splinetool/react-spline";
+import { useScrollToSection } from "@/hooks/useScrollToSection";
+import {
+  Modal,
+  ModalTrigger,
+  ModalBody,
+  ModalContent,
+} from "@/components/ui/animated-modal";
+import ContactForm from "@/components/sections/contact/default";
 
 // Dynamically import the Spline component to disable SSR
 // const Spline = dynamic(() => import("@splinetool/react-spline").then((mod) => mod.default), {
@@ -19,6 +27,8 @@ import Spline from "@splinetool/react-spline";
 // });
 
 export default function Hero() {
+  const scrollToSection = useScrollToSection();
+
   // const { resolvedTheme } = useTheme();
   // let src;
 
@@ -44,7 +54,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 flex min-h-screen">
-        <div className="mx-auto flex container max-w-container flex-col gap-12 pt-24 sm:gap-24">
+        <div className="container mx-auto flex max-w-container flex-col gap-12 pt-24 sm:gap-24">
           <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
             <Badge variant="outline" className="animate-appear">
               <span className="text-muted-foreground">
@@ -69,18 +79,30 @@ export default function Hero() {
               </h1>
             </div>
             <p className="text-md relative z-10 max-w-[550px] animate-appear font-medium text-muted-foreground opacity-0 delay-100 sm:text-sm">
-            Specializing in consultancy, and development of websites, mobile apps, and SaaS platforms.
+              Specializing in consultancy, and development of websites, mobile
+              apps, and SaaS platforms.
             </p>
             <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300">
-              <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300">
-                <Button variant="default" size="lg" asChild>
-                  <a href={siteConfig.getStartedUrl}>Our Work</a>
-                </Button>
-                <Button variant="glow" size="lg" asChild>
-                  <a href={siteConfig.links.github}>
-                    <Github className="mr-2 h-4 w-4" /> Hire Us
-                  </a>
-                </Button>
+              <Button
+                variant="default"
+                size="lg"
+                onClick={() => scrollToSection("ourwork")}
+              >
+                Our Work
+              </Button>
+              <div className="flex items-center justify-center ">
+                <Modal>
+                  <ModalTrigger>
+                    <Button variant="glow" size="lg">
+                      <Github className="mr-2 h-4 w-4" /> Hire Us
+                    </Button>
+                  </ModalTrigger>
+                  <ModalBody size="md">
+                    <ModalContent>
+                      <ContactForm />
+                    </ModalContent>
+                  </ModalBody>
+                </Modal>
               </div>
             </div>
             <div className="relative pt-12">
