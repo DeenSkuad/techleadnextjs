@@ -1,6 +1,4 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from 'next-intl/server';
 import { navigationItems } from "@/config/navigation";
 import { AnimatedTitle } from "@/components/AnimatedTitle";
 import { AnimatedDescription } from "@/components/AnimatedDescription";
@@ -9,12 +7,12 @@ import CTA from "@/components/sections/cta/default";
 import Footer from "@/components/sections/footer/default";
 import { notFound } from "next/navigation";
 
-export default function ServicePage({
-  params: { slug }
+export default async function ServicePage({
+  params: { locale, slug }
 }: {
   params: { locale: string; slug: string }
 }) {
-  const t = useTranslations();
+  const t = await getTranslations();
   
   const serviceInfo = navigationItems.services.find(
     (service) => service.slug === slug
@@ -28,6 +26,11 @@ export default function ServicePage({
     <div className="min-h-screen">
       <Navbar />
       <div className="py-20 px-4">
+        <div className="mb-8">
+          <a href={`/${locale}/services`} className="text-muted-foreground hover:text-foreground">
+            ← {t('navigation.services')}
+          </a>
+        </div>
         <AnimatedTitle>
           <h1 className="text-4xl md:text-6xl font-bold text-center text-slate-200">
             {t(`services.${serviceInfo.slug}.title`)}
@@ -43,4 +46,11 @@ export default function ServicePage({
       <Footer />
     </div>
   );
+}
+
+export function generateStaticParams() {
+  return navigationItems.services.flatMap(service => [
+    { locale: 'en', slug: service.slug },
+    { locale: 'ms', slug: service.slug }
+  ]);
 } 

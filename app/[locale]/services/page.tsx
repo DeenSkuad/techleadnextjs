@@ -1,18 +1,16 @@
-"use client";
-import { useTranslations } from "next-intl";
+import { getTranslations } from 'next-intl/server';
 import { navigationItems } from "@/config/navigation";
-import Link from "next/link";
 import { AnimatedTitle } from "@/components/AnimatedTitle";
 import Navbar from "@/components/sections/navbar/default";
 import CTA from "@/components/sections/cta/default";
 import Footer from "@/components/sections/footer/default";
 
-export default function ServicesPage({
+export default async function ServicesPage({
   params: { locale }
 }: {
   params: { locale: string }
 }) {
-  const t = useTranslations();
+  const t = await getTranslations();
   
   return (
     <div className="min-h-screen">
@@ -26,7 +24,7 @@ export default function ServicesPage({
         
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto px-4">
           {navigationItems.services.map((service) => (
-            <Link
+            <a
               key={service.slug}
               href={`/${locale}${service.href}`}
               className="p-6 rounded-lg border hover:bg-slate-800 transition-colors"
@@ -37,7 +35,7 @@ export default function ServicesPage({
               <p className="text-slate-400">
                 {t(`services.${service.slug}.description`)}
               </p>
-            </Link>
+            </a>
           ))}
         </div>
       </div>
@@ -45,4 +43,8 @@ export default function ServicesPage({
       <Footer />
     </div>
   );
+}
+
+export function generateStaticParams() {
+  return [{ locale: 'en' }, { locale: 'ms' }];
 } 
