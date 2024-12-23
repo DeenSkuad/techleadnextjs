@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-
+import { useTranslations, useLocale } from 'next-intl';
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
@@ -14,92 +14,89 @@ import {
   navigationMenuTriggerStyle,
 } from "./navigation-menu";
 import LaunchUI from "../logos/launch-ui";
-import { siteConfig } from "@/config/site";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
 import { navigationItems } from "@/config/navigation";
 
 export default function Navigation() {
+  const t = useTranslations();
+  const locale = useLocale();
   const scrollToSection = useScrollToSection();
-
-  const renderNavItem = (item: (typeof navigationItems.mainNav)[0]) => {
-    if (item.isScroll) {
-      return (
-        <div
-          className="cursor-pointer"
-          onClick={() => scrollToSection(item.sectionId)}
-        >
-          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            {item.title}
-          </NavigationMenuLink>
-        </div>
-      );
-    }
-
-    return (
-      <Link href={item.href || "/"} legacyBehavior passHref>
-        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-          {item.title}
-        </NavigationMenuLink>
-      </Link>
-    );
-  };
 
   return (
     <NavigationMenu className="hidden md:flex">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+          <NavigationMenuTrigger>
+            {t('navigation.services')}
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
-                  <a
+                  <Link
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href={siteConfig.url}
+                    href={`/${locale}/services`}
                   >
                     <LaunchUI />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      Mobile App
+                      {t('navigation.services')}
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      {/* Mobile App Services Description */}
-                      We provide a wide range of mobile app development services
-                      to help you take your business to the next level.
+                      {t('navigation.servicesDescription')}
                     </p>
-                  </a>
+                  </Link>
                 </NavigationMenuLink>
               </li>
               {navigationItems.services.map((service) => (
                 <ListItem
-                  key={service.title}
-                  href={siteConfig.url}
-                  title={service.title}
+                  key={service.slug}
+                  href={`/${locale}/services/${service.slug}`}
+                  title={t(`services.${service.slug}.title`)}
                 >
-                  {service.description}
+                  {t(`services.${service.slug}.description`)}
                 </ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Product</NavigationMenuTrigger>
+          <NavigationMenuTrigger>
+            {t('navigation.products')}
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {navigationItems.products.map((product) => (
                 <ListItem
                   key={product.title}
-                  title={product.title}
-                  href={siteConfig.url}
+                  title={t(`products.${product.title.toLowerCase().replace(/\s/g, '')}.title`)}
+                  href={`/${locale}/products/${product.title.toLowerCase().replace(/\s/g, '')}`}
                 >
-                  {product.description}
+                  {t(`products.${product.title.toLowerCase().replace(/\s/g, '')}.description`)}
                 </ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+
         {navigationItems.mainNav.map((item) => (
           <NavigationMenuItem key={item.title}>
-            {renderNavItem(item)}
+            {item.isScroll ? (
+              <div
+                className="cursor-pointer"
+                onClick={() => scrollToSection(item.sectionId)}
+              >
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  {t(`navigation.${item.title.toLowerCase().replace(/\s/g, '')}`)}
+                </NavigationMenuLink>
+              </div>
+            ) : (
+              <Link href={`/${locale}${item.href}`} legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  {t(`navigation.${item.title.toLowerCase().replace(/\s/g, '')}`)}
+                </NavigationMenuLink>
+              </Link>
+            )}
           </NavigationMenuItem>
         ))}
       </NavigationMenuList>
@@ -118,7 +115,7 @@ const ListItem = React.forwardRef<
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className,
+            className
           )}
           {...props}
         >

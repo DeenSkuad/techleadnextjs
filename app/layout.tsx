@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "@/app/globals.css";
 import { inter } from "@/lib/fonts";
 import { ThemeProvider } from "@/components/contexts/theme-provider";
-import { siteConfig } from "../config/site";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: {
@@ -58,15 +58,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={`${inter.className}  `}>
+    <html suppressHydrationWarning>
+      <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          // defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

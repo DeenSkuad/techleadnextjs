@@ -1,0 +1,58 @@
+{
+  "navigation": {
+    "services": "Perkhidmatan",
+    "products": "Produk",
+    "aboutus": "Tentang Kami",
+    "casestudies": "Kajian Kes",
+    "ourwork": "Kerja Kami",
+    "training": "Latihan",
+    "servicesDescription": "Terokai pelbagai perkhidmatan kami"
+  },
+  "hero": {
+    "badge": "Bersedia untuk projek baru",
+    "subtitle": "Rakan kongsi anda dalam",
+    "title": "Penyelesaian Teknologi",
+    "description": "Pakar dalam perundingan, dan pembangunan laman web, aplikasi mudah alih, dan platform SaaS.",
+    "buttons": {
+      "ourWork": "Kerja Kami",
+      "hireUs": "Hubungi Kami"
+    }
+  },
+  "services": {
+    "title": "Perkhidmatan Kami",
+    "webdevelopment": {
+      "title": "Pembangunan Web",
+      "description": "Kami membina laman web untuk perniagaan pelbagai saiz"
+    },
+    "cybersecurity": {
+      "title": "Keselamatan Siber",
+      "description": "Kami menyediakan perkhidmatan keselamatan siber untuk melindungi perniagaan anda"
+    },
+    "uiuxdesign": {
+      "title": "Reka Bentuk UI/UX",
+      "description": "Cipta laman web yang mesra pengguna dan menarik"
+    },
+    "training": {
+      "title": "Latihan",
+      "description": "Latihan FE & BE untuk pasukan dalaman anda"
+    },
+    "consulting": {
+      "title": "Perundingan",
+      "description": "Kami menyediakan perkhidmatan perundingan untuk membantu meningkatkan perniagaan anda"
+    }
+  },
+  "products": {
+    "assetManagement": {
+      "title": "Pengurusan Aset",
+      "description": "Urus aset dan inventori anda dengan mudah, kami ada penyelesaiannya."
+    },
+    "hrms": {
+      "title": "HRMS",
+      "description": "Urus pekerja anda dan tingkatkan perniagaan anda."
+    },
+    "ecommerce": {
+      "title": "e-Dagang",
+      "description": "Platform e-dagang berbilang vendor untuk perniagaan anda. segerak dengan mana-mana pasaran."
+    }
+  }
+} 

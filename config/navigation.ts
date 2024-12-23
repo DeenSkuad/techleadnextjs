@@ -1,30 +1,31 @@
+// src/config/navigation.ts
 export const navigationItems = {
   services: [
     {
       title: "Web Development",
-      description:
-        "We build custom websites for businesses of all sizes, from small startups to large enterprises.",
+      slug: "webdevelopment",
+      href: "/services/webdevelopment"
     },
     {
-      title: "CyberSecurity",
-      description:
-        "We provide cyber security services to help you protect your business from cyber threats.",
+      title: "Cyber Security",
+      slug: "cybersecurity",
+      href: "/services/cybersecurity"
     },
     {
       title: "UI/UX Design",
-      description:
-        "Hire us tocreate a user-friendly and visually appealing website.",
+      slug: "uiuxdesign",
+      href: "/services/uiuxdesign"
     },
     {
       title: "Training",
-      description:
-        "FE & BE training for your internal team.",
+      slug: "training",
+      href: "/services/training"
     },
     {
       title: "Consulting",
-      description:
-        "We provide consulting services to help you improve your business.",
-    },
+      slug: "consulting",
+      href: "/services/consulting"
+    }
   ],
   products: [
     {

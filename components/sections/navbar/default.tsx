@@ -1,3 +1,5 @@
+// src/components/sections/navbar/default.tsx
+
 import Navigation from "../../ui/navigation";
 import { Button } from "../../ui/button";
 import {
@@ -9,6 +11,7 @@ import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
 import { Menu } from "lucide-react";
 import LaunchUI from "../../logos/launch-ui";
 import { siteConfig } from "@/config/site";
+import LanguageSwitcher from "../../LanguageSwitcher";
 
 export default function Navbar() {
   return (
@@ -27,9 +30,7 @@ export default function Navbar() {
             <Navigation />
           </NavbarLeft>
           <NavbarRight>
-            {/* <a href={siteConfig.url} className="hidden text-sm md:block">
-              Sign in
-            </a> */}
+            <LanguageSwitcher />
             <Button variant="default" asChild>
               <a href={siteConfig.url}>Talk To Us</a>
             </Button>

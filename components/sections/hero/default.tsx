@@ -20,6 +20,7 @@ import {
   ModalContent,
 } from "@/components/ui/animated-modal";
 import ContactForm from "@/components/sections/contact/default";
+import { useTranslations } from 'next-intl';
 
 // Dynamically import the Spline component to disable SSR
 // const Spline = dynamic(() => import("@splinetool/react-spline").then((mod) => mod.default), {
@@ -27,6 +28,7 @@ import ContactForm from "@/components/sections/contact/default";
 // });
 
 export default function Hero() {
+  const t = useTranslations();
   const scrollToSection = useScrollToSection();
 
   // const { resolvedTheme } = useTheme();
@@ -58,29 +60,20 @@ export default function Hero() {
           <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
             <Badge variant="outline" className="animate-appear">
               <span className="text-muted-foreground">
-                Available for new project
+                {t('hero.badge')}
               </span>
-              {/* <a
-                href={siteConfig.getStartedUrl}
-                className="flex items-center gap-1"
-              >
-                Contact us
-                <ArrowRightIcon className="h-3 w-3" />
-              </a> */}
-
               <span className="h-1 w-1 animate-[blink_1s_ease-in-out_infinite] rounded-full bg-green-500" />
             </Badge>
             <div>
               <h1 className="text-md relative z-10 inline-block animate-appear bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text font-semibold text-transparent drop-shadow-2xl sm:text-xl md:text-3xl">
-                Your trusted partner in
+                {t('hero.subtitle')}
               </h1>
               <h1 className="text-md relative z-10 inline-block animate-appear bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text font-semibold leading-tight text-transparent drop-shadow-2xl sm:text-xl sm:leading-tight md:text-8xl md:leading-tight">
-                Technology solutions
+                {t('hero.title')}
               </h1>
             </div>
             <p className="text-md relative z-10 max-w-[550px] animate-appear font-medium text-muted-foreground opacity-0 delay-100 sm:text-sm">
-              Specializing in consultancy, and development of websites, mobile
-              apps, and SaaS platforms.
+              {t('hero.description')}
             </p>
             <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300">
               <Button
@@ -88,13 +81,13 @@ export default function Hero() {
                 size="lg"
                 onClick={() => scrollToSection("ourwork")}
               >
-                Our Work
+                {t('hero.buttons.ourWork')}
               </Button>
-              <div className="flex items-center justify-center ">
+              <div className="flex items-center justify-center">
                 <Modal>
                   <ModalTrigger>
                     <Button variant="glow" size="lg">
-                      <Github className="mr-2 h-4 w-4" /> Hire Us
+                      <Github className="mr-2 h-4 w-4" /> {t('hero.buttons.hireUs')}
                     </Button>
                   </ModalTrigger>
                   <ModalBody size="md">

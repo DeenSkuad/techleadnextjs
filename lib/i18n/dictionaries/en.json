@@ -1,0 +1,61 @@
+{
+  "navigation": {
+    "title": "Tech Lead",
+    "toggleMenu": "Toggle navigation menu",
+    "talkToUs": "Talk To Us",
+    "services": "Services",
+    "products": "Products",
+    "aboutus": "About Us",
+    "casestudies": "Case Studies",
+    "ourwork": "Our Work",
+    "training": "Training",
+    "servicesDescription": "Explore our comprehensive range of services"
+  },
+  "hero": {
+    "badge": "Available for new project",
+    "subtitle": "Your trusted partner in",
+    "title": "Technology solutions",
+    "description": "Specializing in consultancy, and development of websites, mobile apps, and SaaS platforms.",
+    "buttons": {
+      "ourWork": "Our Work",
+      "hireUs": "Hire Us"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "webdevelopment": {
+      "title": "Web Development",
+      "description": "We build custom websites for businesses of all sizes"
+    },
+    "cybersecurity": {
+      "title": "Cyber Security",
+      "description": "We provide cyber security services to protect your business"
+    },
+    "uiuxdesign": {
+      "title": "UI/UX Design",
+      "description": "Create user-friendly and visually appealing websites"
+    },
+    "training": {
+      "title": "Training",
+      "description": "FE & BE training for your internal team"
+    },
+    "consulting": {
+      "title": "Consulting",
+      "description": "We provide consulting services to help improve your business"
+    }
+  },
+  "products": {
+    "assetmanagement": {
+      "title": "Asset Management",
+      "description": "Manage your assets and inventory with ease"
+    },
+    "hrms": {
+      "title": "HRMS",
+      "description": "Manage your employees and improve your business."
+    },
+    "ecommerce": {
+      "title": "e-Commerce",
+      "description": "Multi-vendor e-commerce platform for your business. sync with any marketplace."
+    }
+  }
+} 
