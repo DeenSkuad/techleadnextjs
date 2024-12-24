@@ -56,6 +56,14 @@
     "ecommerce": {
       "title": "e-Commerce",
       "description": "Multi-vendor e-commerce platform for your business. sync with any marketplace."
+    },
+    "elearning": {
+      "title": "e-Learning",
+      "description": "Online learning platform for your business. we provide the best learning management system."
+    },
+    "inventoryandwarehouse": {
+      "title": "Inventory & Warehouse",
+      "description": "Inventory and warehouse management services to track your inventory and warehouse."
     }
   }
 } 

@@ -41,30 +41,25 @@ export const navigationItems = {
   ] as ServiceItem[],
   products: [
     {
-      title: "Asset Management",
-      description:
-        "Manage your assets and inventory with ease?, we have the solution for you.",
+      title: "assetmanagement",
+      description: "Manage your assets and inventory with ease"
     },
     {
-      title: "HRMS",
-      description:
-        "Manage your employees and improve your business.",
+      title: "hrms",
+      description: "Manage your employees and improve your business."
     },
     {
-      title: "e-Commerce",
-      description:
-        "Multi-vendor e-commerce platform for your business. sync with any marketplace.",
+      title: "ecommerce",
+      description: "Multi-vendor e-commerce platform for your business."
     },
     {
-      title: "e-Learning",
-      description:
-        "online learning platform for your business. we provide the best learning management system.",
+      title: "elearning",
+      description: "Online learning platform for your business."
     },
     {
-      title: "Inventory & Warehouse",
-      description:
-        "inventory and warehouse management services to track your inventory and warehouse.",
-    },
+      title: "inventoryandwarehouse",
+      description: "Inventory and warehouse management services."
+    }
   ],
   mainNav: [
     {

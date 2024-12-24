@@ -48,7 +48,7 @@ export default function services() {
           <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0">
             <IconContainer
               delay={0.6}
-              text="Data Analysis"
+              text="Data Analytics"
               icon={<HiDocumentReport className="h-8 w-8 text-slate-600" />}
             />
             <IconContainer

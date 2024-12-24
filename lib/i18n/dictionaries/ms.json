@@ -42,7 +42,7 @@
     }
   },
   "products": {
-    "assetManagement": {
+    "assetmanagement": {
       "title": "Pengurusan Aset",
       "description": "Urus aset dan inventori anda dengan mudah, kami ada penyelesaiannya."
     },
@@ -53,6 +53,14 @@
     "ecommerce": {
       "title": "e-Dagang",
       "description": "Platform e-dagang berbilang vendor untuk perniagaan anda. segerak dengan mana-mana pasaran."
+    },
+    "elearning": {
+      "title": "e-Pembelajaran",
+      "description": "Platform pembelajaran dalam talian untuk perniagaan anda. kami menyediakan sistem pengurusan pembelajaran terbaik."
+    },
+    "inventoryandwarehouse": {
+      "title": "Inventori & Gudang",
+      "description": "Perkhidmatan pengurusan inventori dan gudang untuk menjejaki inventori dan gudang anda."
     }
   }
 } 

@@ -69,10 +69,10 @@ export default function Navigation() {
               {navigationItems.products.map((product) => (
                 <ListItem
                   key={product.title}
-                  title={t(`products.${product.title.toLowerCase().replace(/\s/g, '')}.title`)}
-                  href={`/${locale}/products/${product.title.toLowerCase().replace(/\s/g, '')}`}
+                  title={t(`products.${product.title}.title`)}
+                  href={`/${locale}/products/${product.title}`}
                 >
-                  {t(`products.${product.title.toLowerCase().replace(/\s/g, '')}.description`)}
+                  {t(`products.${product.title}.description`)}
                 </ListItem>
               ))}
             </ul>
