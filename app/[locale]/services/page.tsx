@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { navigationItems } from "@/config/navigation";
 import { AnimatedTitle } from "@/components/AnimatedTitle";
 import Navbar from "@/components/sections/navbar/default";
@@ -10,6 +10,7 @@ export default async function ServicesPage({
 }: {
   params: { locale: string }
 }) {
+  unstable_setRequestLocale(locale);
   const t = await getTranslations();
   
   return (

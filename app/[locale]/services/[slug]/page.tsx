@@ -6,12 +6,14 @@ import Navbar from "@/components/sections/navbar/default";
 import CTA from "@/components/sections/cta/default";
 import Footer from "@/components/sections/footer/default";
 import { notFound } from "next/navigation";
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 export default async function ServicePage({
   params: { locale, slug }
 }: {
   params: { locale: string; slug: string }
 }) {
+  unstable_setRequestLocale(locale);
   const t = await getTranslations();
   
   const serviceInfo = navigationItems.services.find(

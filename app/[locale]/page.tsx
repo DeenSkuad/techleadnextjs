@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 // src/app/[locale]/page.tsx
 import Navbar from "@/components/sections/navbar/default";
 import Hero from "@/components/sections/hero/default";
@@ -10,13 +10,14 @@ import Footer from "@/components/sections/footer/default";
 import Services from "@/components/sections/services/default";
 import Works from "@/components/sections/works/default";
 import Products from "@/components/sections/products/default";
-// import { useTranslations } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
-export default function Home({
-  // params: { locale }
+export default async function Home({
+  params: { locale }
 }: {
   params: { locale: string }
 }) {
+  unstable_setRequestLocale(locale);
   return (
     <main className="bg-background text-foreground">
       <Navbar />
