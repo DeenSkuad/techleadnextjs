@@ -64,11 +64,11 @@ export default function Hero() {
               </span>
               <span className="h-1 w-1 animate-[blink_1s_ease-in-out_infinite] rounded-full bg-green-500" />
             </Badge>
-            <div>
+            <div className="flex flex-col items-center justify-center">
               <h1 className="text-md relative z-10 inline-block animate-appear bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text font-semibold text-transparent drop-shadow-2xl sm:text-xl md:text-3xl">
                 {t('hero.subtitle')}
               </h1>
-              <h1 className="text-md relative z-10 inline-block animate-appear bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text font-semibold leading-tight text-transparent drop-shadow-2xl sm:text-xl sm:leading-tight md:text-8xl md:leading-tight">
+              <h1 className="text-4xl relative z-10 inline-block animate-appear bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text font-semibold leading-tight text-transparent drop-shadow-2xl sm:text-xl sm:leading-tight md:text-8xl md:leading-tight">
                 {t('hero.title')}
               </h1>
             </div>
