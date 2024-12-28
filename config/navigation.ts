@@ -15,6 +15,24 @@ export const navigationItems = {
       description: "We build custom websites for businesses of all sizes"
     },
     {
+      title: "Android Development",
+      slug: "androidapp",
+      href: "/services/androidapp",
+      description: "Custom Android applications for your business needs"
+    },
+    {
+      title: "iOS Development",
+      slug: "iosapp",
+      href: "/services/iosapp",
+      description: "Native iOS applications built for performance"
+    },
+    {
+      title: "Cloud Services",
+      slug: "cloud",
+      href: "/services/cloud",
+      description: "AWS, Azure, and Google Cloud solutions and management"
+    },
+    {
       title: "Cyber Security",
       slug: "cybersecurity",
       href: "/services/cybersecurity",
@@ -25,6 +43,18 @@ export const navigationItems = {
       slug: "uiuxdesign",
       href: "/services/uiuxdesign",
       description: "Create user-friendly and visually appealing websites"
+    },
+    {
+      title: "DevOps",
+      slug: "devops",
+      href: "/services/devops",
+      description: "Streamline your development and operations workflow"
+    },
+    {
+      title: "AI Solutions",
+      slug: "ai",
+      href: "/services/ai",
+      description: "AI and Machine Learning integration"
     },
     {
       title: "Training",

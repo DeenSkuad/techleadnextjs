@@ -1,12 +1,27 @@
 import createMiddleware from 'next-intl/middleware';
-// import { locales } from '@/config/i18n';
+import { locales, defaultLocale } from '@/lib/i18n/config';
 
 export default createMiddleware({
-  locales: ['en', 'ms'],
-  defaultLocale: 'en',
-  localePrefix: 'always'
+  defaultLocale,
+  locales,
+  localePrefix: 'always',
+  pathnames: {
+    '/': '/',
+    '/services': '/services',
+    '/services/[slug]': {
+      en: '/services/[slug]',
+      ms: '/services/[slug]'
+    },
+    '/products/[slug]': {
+      en: '/products/[slug]',
+      ms: '/products/[slug]'
+    }
+  }
 });
 
 export const config = {
-  matcher: ['/', '/(ms|en)/:path*']
+  matcher: [
+    '/((?!api|_next|.*\\..*).*)',
+    '/api/client/:path*'
+  ]
 }; 

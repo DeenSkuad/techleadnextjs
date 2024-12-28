@@ -1,9 +1,7 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { navigationItems } from "@/config/navigation";
 import { AnimatedTitle } from "@/components/AnimatedTitle";
-import Navbar from "@/components/sections/navbar/default";
-import CTA from "@/components/sections/cta/default";
-import Footer from "@/components/sections/footer/default";
+
 
 export default async function ServicesPage({
   params: { locale }
@@ -14,16 +12,16 @@ export default async function ServicesPage({
   const t = await getTranslations();
   
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <div className="py-20 px-4">
+    <div className="w-full">
+
+      <div className="py-20 px-4 w-full border">
         <AnimatedTitle>
           <h1 className="text-4xl md:text-6xl font-bold text-center text-slate-200">
             {t('services.title')}
           </h1>
         </AnimatedTitle>
         
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto px-4">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 mx-auto px-4 md:px-20">
           {navigationItems.services.map((service) => (
             <a
               key={service.slug}
@@ -40,8 +38,6 @@ export default async function ServicesPage({
           ))}
         </div>
       </div>
-      <CTA />
-      <Footer />
     </div>
   );
 }

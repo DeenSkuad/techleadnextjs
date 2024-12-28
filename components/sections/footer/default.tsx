@@ -1,11 +1,11 @@
 import { ModeToggle } from "../../ui/mode-toggle";
 import {
   Footer,
-  FooterColumn,
+  // FooterColumn,
   FooterBottom,
-  FooterContent,
+  // FooterContent,
 } from "../../ui/footer";
-import LaunchUI from "../../logos/launch-ui";
+// import LaunchUI from "../../logos/launch-ui";
 import { siteConfig } from "@/config/site";
 
 export default function FooterSection() {
@@ -13,11 +13,11 @@ export default function FooterSection() {
     <footer className="w-full bg-background px-4">
       <div className="mx-auto max-w-container">
         <Footer>
-          <FooterContent>
+          {/* <FooterContent>
             <FooterColumn className="col-span-2 sm:col-span-3 md:col-span-1">
               <div className="flex items-center gap-2">
                 <LaunchUI />
-                <h3 className="text-xl font-bold">Launch UI</h3>
+                <h3 className="text-xl font-bold">Tech lead</h3>
               </div>
             </FooterColumn>
             <FooterColumn>
@@ -77,9 +77,9 @@ export default function FooterSection() {
                 Github
               </a>
             </FooterColumn>
-          </FooterContent>
+          </FooterContent> */}
           <FooterBottom>
-            <div>© 2024 Mikołaj Dobrucki. All rights reserved</div>
+            <div>© 2024 Tech lead. All rights reserved</div>
             <div className="flex items-center gap-4">
               <a href={siteConfig.url}>Privacy Policy</a>
               <a href={siteConfig.url}>Terms of Service</a>

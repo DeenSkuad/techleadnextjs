@@ -39,6 +39,26 @@
     "consulting": {
       "title": "Perundingan",
       "description": "Kami menyediakan perkhidmatan perundingan untuk membantu meningkatkan perniagaan anda"
+    },
+    "androidapp": {
+      "title": "Pembangunan Android",
+      "description": "Aplikasi Android yang disesuaikan untuk keperluan perniagaan anda"
+    },
+    "iosapp": {
+      "title": "Pembangunan iOS",
+      "description": "Aplikasi iOS natif yang dibina untuk prestasi"
+    },
+    "cloud": {
+      "title": "Perkhidmatan Awan",
+      "description": "Penyelesaian dan pengurusan AWS, Azure, dan Google Cloud"
+    },
+    "devops": {
+      "title": "DevOps",
+      "description": "Permudahkan aliran kerja pembangunan dan operasi anda"
+    },
+    "ai": {
+      "title": "Penyelesaian AI",
+      "description": "Integrasi Kecerdasan Buatan dan Pembelajaran Mesin"
     }
   },
   "products": {
@@ -61,6 +81,71 @@
     "inventoryandwarehouse": {
       "title": "Inventori & Gudang",
       "description": "Perkhidmatan pengurusan inventori dan gudang untuk menjejaki inventori dan gudang anda."
+    },
+    "solutions": {
+      "enterprise": "Penyelesaian Perusahaan"
+    },
+    "hero": {
+      "title": "Memperkasakan Perniagaan dengan Penyelesaian Perisian",
+      "subtitle": "Terokai penyelesaian inovatif yang disesuaikan untuk keperluan perniagaan anda",
+      "cta": "Ketahui Lebih Lanjut"
+    },
+    "nav": {
+      "back": "Kembali ke Produk",
+      "demo": "Minta Demo"
+    },
+    "list": {
+      "assetmanagement": {
+        "title": "Perisian Pengurusan Aset",
+        "tagline": "Optimumkan Kitaran Hayat Aset Anda dengan Mudah",
+        "description": "Penyelesaian pengurusan dan penjejakan aset yang komprehensif untuk semua saiz perniagaan.",
+        "features": [
+          { "title": "Penjejakan Aset", "description": "Pemantauan masa nyata" },
+          { "title": "Kemas Kini Masa Nyata", "description": "Kemas kini status segera" },
+          { "title": "Laporan Tersuai", "description": "Analitik dan pelaporan terperinci" }
+        ]
+      },
+      "hrms": {
+        "title": "Sistem Pengurusan HR",
+        "tagline": "Permudahkan Operasi HR Anda",
+        "description": "Penyelesaian HR lengkap dengan gaji, pengurusan cuti, dan penjejakan prestasi.",
+        "features": [
+          { "title": "Pengurusan Pekerja", "description": "Data pekerja komprehensif" },
+          { "title": "Sistem Gaji", "description": "Pemprosesan gaji automatik" },
+          { "title": "Analitik Prestasi", "description": "Penjejakan prestasi pekerja" }
+        ]
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Kenali kami",
+      "subtitle": "SIAPA KAMI",
+      "description": "Dengan semangat untuk teknologi dan komitmen kepada kecemerlangan, kami memperkasakan perniagaan untuk berkembang dalam landskap digital."
+    },
+    "hero2": {
+      "title": "SIAPA KAMI",
+      "subtitle": "Kami fokus pada orang dan keseronokan",
+      "description": "Kami berkomitmen untuk mencipta penyelesaian teknologi yang mengubah cara perniagaan beroperasi."
+    },
+    "tabs": {
+      "mission": {
+        "title": "Misi",
+        "content": "Kami bertujuan untuk memudahkan proses yang kompleks, meningkatkan kecekapan operasi, dan mendorong pertumbuhan melalui perisian dan perkhidmatan inovatif kami. Dengan menyediakan penyelesaian yang boleh dipercayai, kami membolehkan pelanggan kami menghadapi landskap teknologi yang sentiasa berubah."
+      },
+      "vision": {
+        "title": "Visi",
+        "content": "Di jantung visi kami adalah masa depan di mana perniagaan memanfaatkan kuasa teknologi untuk mencapai pencapaian luar biasa. Kami membayangkan dunia di mana setiap usahawan, startup, dan perusahaan mempunyai akses kepada alat canggih."
+      },
+      "values": {
+        "title": "Nilai",
+        "content": "Kami memegang standard etika tertinggi, memastikan ketelusan, kejujuran, dan kepercayaan dalam semua interaksi kami. Inovasi memacu kreativiti kami, mendorong kami untuk meneroka sempadan baru dan membangunkan penyelesaian yang mengubah permainan."
+      }
+    },
+    "team": {
+      "label": "AHLI PASUKAN",
+      "title": "Kami adalah pasukan yang didorong oleh hasil",
+      "description": "Dengan semangat untuk inovasi dan dedikasi kepada kecemerlangan, kami membawa kepakaran yang pelbagai kepada setiap projek yang kami jalankan."
     }
   }
 } 

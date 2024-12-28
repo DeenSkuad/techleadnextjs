@@ -1,8 +1,8 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
-import { useTranslations, useLocale } from 'next-intl';
+import { Link } from '@/lib/i18n/navigation';
+import { useTranslations } from 'next-intl';
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
@@ -16,10 +16,17 @@ import {
 import LaunchUI from "../logos/launch-ui";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
 import { navigationItems } from "@/config/navigation";
+import type { UrlObject } from 'url';
+
+interface ListItemProps {
+  title: string;
+  href: string | UrlObject;
+  children: React.ReactNode;
+  className?: string;
+}
 
 export default function Navigation() {
   const t = useTranslations();
-  const locale = useLocale();
   const scrollToSection = useScrollToSection();
 
   return (
@@ -35,7 +42,7 @@ export default function Navigation() {
                 <NavigationMenuLink asChild>
                   <Link
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href={`/${locale}/services`}
+                    href="/services"
                   >
                     <LaunchUI />
                     <div className="mb-2 mt-4 text-lg font-medium">
@@ -50,7 +57,7 @@ export default function Navigation() {
               {navigationItems.services.map((service) => (
                 <ListItem
                   key={service.slug}
-                  href={`/${locale}/services/${service.slug}`}
+                  href={`/services/${service.slug}`}
                   title={t(`services.${service.slug}.title`)}
                 >
                   {t(`services.${service.slug}.description`)}
@@ -70,7 +77,7 @@ export default function Navigation() {
                 <ListItem
                   key={product.title}
                   title={t(`products.${product.title}.title`)}
-                  href={`/${locale}/products/${product.title}`}
+                  href={`/products/${product.title}`}
                 >
                   {t(`products.${product.title}.description`)}
                 </ListItem>
@@ -91,7 +98,7 @@ export default function Navigation() {
                 </NavigationMenuLink>
               </div>
             ) : (
-              <Link href={`/${locale}${item.href}`} legacyBehavior passHref>
+              <Link href={item.href || '/'} legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   {t(`navigation.${item.title.toLowerCase().replace(/\s/g, '')}`)}
                 </NavigationMenuLink>
@@ -105,25 +112,26 @@ export default function Navigation() {
 }
 
 const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+  HTMLAnchorElement,
+  ListItemProps & Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, keyof ListItemProps>
+>(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
+        <Link
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
           )}
+          href={href}
           {...props}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   );

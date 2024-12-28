@@ -20,6 +20,7 @@
       "ourWork": "Our Work",
       "hireUs": "Hire Us"
     }
+
   },
   "services": {
     "title": "Our Services",
@@ -42,28 +43,117 @@
     "consulting": {
       "title": "Consulting",
       "description": "We provide consulting services to help improve your business"
+    },
+    "androidapp": {
+      "title": "Android Development",
+      "description": "Custom Android applications for your business needs"
+    },
+    "iosapp": {
+      "title": "iOS Development",
+      "description": "Native iOS applications built for performance"
+    },
+    "cloud": {
+      "title": "Cloud Services",
+      "description": "AWS, Azure, and Google Cloud solutions and management"
+    },
+    "devops": {
+      "title": "DevOps",
+      "description": "Streamline your development and operations workflow"
+    },
+    "ai": {
+      "title": "AI Solutions",
+      "description": "Artificial Intelligence and Machine Learning integration"
     }
   },
   "products": {
+    "solutions": {
+      "enterprise": "Enterprise Solutions"
+    },
+    "hero": {
+      "title": "Empowering Businesses with Custom Software Solutions",
+      "subtitle": "Explore innovative solutions tailored for your business needs",
+      "cta": "Learn More"
+    },
     "assetmanagement": {
-      "title": "Asset Management",
-      "description": "Manage your assets and inventory with ease"
+      "title": "Asset Management Software",
+      "tagline": "Optimize Your Asset Lifecycle with Ease",
+      "description": "Comprehensive asset tracking and management solution for businesses of all sizes.",
+      "features": [
+        { "title": "Asset Tracking", "description": "Real-time tracking and monitoring" },
+        { "title": "Real-time Updates", "description": "Instant status updates" },
+        { "title": "Custom Reports", "description": "Detailed analytics and reporting" }
+      ]
     },
     "hrms": {
-      "title": "HRMS",
-      "description": "Manage your employees and improve your business."
+      "title": "HR Management System",
+      "tagline": "Streamline Your HR Operations",
+      "description": "Complete HR solution with payroll, leave management, and performance tracking.",
+      "features": [
+        { "title": "Employee Management", "description": "Comprehensive employee data" },
+        { "title": "Payroll System", "description": "Automated payroll processing" },
+        { "title": "Performance Analytics", "description": "Employee performance tracking" }
+      ]
     },
     "ecommerce": {
-      "title": "e-Commerce",
-      "description": "Multi-vendor e-commerce platform for your business. sync with any marketplace."
+      "title": "E-Commerce & POS",
+      "tagline": "Unified Retail Solution",
+      "description": "Integrated e-commerce and point-of-sale system for modern retail.",
+      "features": [
+        { "title": "Online Store", "description": "Custom e-commerce platform" },
+        { "title": "POS Integration", "description": "Seamless offline-online sync" },
+        { "title": "Inventory Management", "description": "Real-time stock tracking" }
+      ]
     },
     "elearning": {
-      "title": "e-Learning",
-      "description": "Online learning platform for your business. we provide the best learning management system."
+      "title": "E-Learning Platform",
+      "tagline": "Modern Learning Management",
+      "description": "Comprehensive learning management system for educational institutions.",
+      "features": [
+        { "title": "Video Courses", "description": "HD video streaming" },
+        { "title": "Interactive Quizzes", "description": "Assessment tools" },
+        { "title": "Certifications", "description": "Automated certification" }
+      ]
     },
     "inventoryandwarehouse": {
       "title": "Inventory & Warehouse",
-      "description": "Inventory and warehouse management services to track your inventory and warehouse."
+      "tagline": "Smart Inventory Control",
+      "description": "Complete inventory and warehouse management solution for modern businesses.",
+      "features": [
+        { "title": "Stock Management", "description": "Real-time inventory tracking" },
+        { "title": "Warehouse Operations", "description": "Optimize storage and picking" },
+        { "title": "Supply Chain", "description": "End-to-end supply chain visibility" }
+      ]
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Get to know us",
+      "subtitle": "WHO WE ARE",
+      "description": "With a passion for technology and a commitment to excellence, we empower businesses to thrive in the digital landscape."
+    },
+    "hero2": {
+      "title": "WHO WE ARE",
+      "subtitle": "We focus on people and sustainability",
+      "description": "We are dedicated to crafting tech solutions that revolutionize the way businesses operate."
+    },
+    "tabs": {
+      "mission": {
+        "title": "Mission",
+        "content": "We aim to simplify complex processes, enhance operational efficiency, and drive growth through our innovative software and services. By providing reliable solutions, we enable our clients to navigate the ever-changing tech landscape."
+      },
+      "vision": {
+        "title": "Vision",
+        "content": "At the heart of our vision is a future where businesses harness the power of technology to achieve remarkable feats. We envision a world where every entrepreneur, startup, and enterprise has access to advanced tools."
+      },
+      "values": {
+        "title": "Values",
+        "content": "We uphold the highest ethical standards, ensuring transparency, honesty, and trust in all our interactions. Innovation fuels our creativity, driving us to explore new horizons and develop groundbreaking solutions."
+      }
+    },
+    "team": {
+      "label": "TEAM MEMBERS",
+      "title": "We're a results driven team",
+      "description": "With a passion for innovation and a dedication to excellence, we bring diverse expertise to every project we undertake."
     }
   }
 } 

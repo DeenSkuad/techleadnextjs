@@ -31,9 +31,9 @@ export default function Navbar() {
           </NavbarLeft>
           <NavbarRight>
             <LanguageSwitcher />
-            <Button variant="default" asChild>
+            {/* <Button variant="default" asChild>
               <a href={siteConfig.url}>Talk To Us</a>
-            </Button>
+            </Button> */}
             <Sheet>
               <SheetTrigger asChild>
                 <Button
