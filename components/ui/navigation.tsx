@@ -15,19 +15,21 @@ import {
 } from "./navigation-menu";
 import LaunchUI from "../logos/launch-ui";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
-import { navigationItems } from "@/config/navigation";
-import type { UrlObject } from 'url';
+import { getNavigationItems } from '@/config/navigation';
+import { useParams } from 'next/navigation';
+import { NavigationItems } from "@/types/navigation";
 
-interface ListItemProps {
+interface ListItemProps extends React.ComponentPropsWithoutRef<typeof Link> {
   title: string;
-  href: string | UrlObject;
-  children: React.ReactNode;
-  className?: string;
+  children?: React.ReactNode;
 }
 
 export default function Navigation() {
   const t = useTranslations();
   const scrollToSection = useScrollToSection();
+  const params = useParams();
+  const locale = (params?.locale as string) || 'en';
+  const navItems: NavigationItems = getNavigationItems(locale);
 
   return (
     <NavigationMenu className="hidden md:flex">
@@ -54,10 +56,10 @@ export default function Navigation() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              {navigationItems.services.map((service) => (
+              {navItems.services.map((service) => (
                 <ListItem
                   key={service.slug}
-                  href={`/services/${service.slug}`}
+                  href={service.href}
                   title={t(`services.${service.slug}.title`)}
                 >
                   {t(`services.${service.slug}.description`)}
@@ -73,35 +75,34 @@ export default function Navigation() {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-              {navigationItems.products.map((product) => (
+              {navItems.products.map((product) => (
                 <ListItem
-                  key={product.title}
-                  title={t(`products.${product.title}.title`)}
-                  href={`/products/${product.title}`}
+                  key={product.slug}
+                  href={product.href}
+                  title={t(`products.${product.slug}.title`)}
                 >
-                  {t(`products.${product.title}.description`)}
+                  {t(`products.${product.slug}.description`)}
                 </ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        {navigationItems.mainNav.map((item) => (
+        {navItems.mainNav.map((item) => (
           <NavigationMenuItem key={item.title}>
             {item.isScroll ? (
-              <div
-                className="cursor-pointer"
-                onClick={() => scrollToSection(item.sectionId)}
+              <NavigationMenuLink 
+                className={navigationMenuTriggerStyle()}
+                onClick={() => item.sectionId && scrollToSection(item.sectionId)}
               >
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  {t(`navigation.${item.title.toLowerCase().replace(/\s/g, '')}`)}
-                </NavigationMenuLink>
-              </div>
+                {t(`navigation.${item.title}`)}
+              </NavigationMenuLink>
             ) : (
-              <Link href={item.href || '/'} legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  {t(`navigation.${item.title.toLowerCase().replace(/\s/g, '')}`)}
-                </NavigationMenuLink>
+              <Link 
+                href={item.href || '/'} 
+                className={navigationMenuTriggerStyle()}
+              >
+                {t(`navigation.${item.title}`)}
               </Link>
             )}
           </NavigationMenuItem>
@@ -111,29 +112,30 @@ export default function Navigation() {
   );
 }
 
-const ListItem = React.forwardRef<
-  HTMLAnchorElement,
-  ListItemProps & Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, keyof ListItemProps>
->(({ className, title, children, href, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <Link
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          href={href}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </Link>
-      </NavigationMenuLink>
-    </li>
-  );
-});
+const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
+  ({ className, title, children, href, ...props }, ref) => {
+    return (
+      <li>
+        <NavigationMenuLink asChild>
+          <Link
+            ref={ref}
+            className={cn(
+              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+              className
+            )}
+            href={href}
+            {...props}
+          >
+            <div className="text-sm font-medium leading-none">{title}</div>
+            {children && (
+              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                {children}
+              </p>
+            )}
+          </Link>
+        </NavigationMenuLink>
+      </li>
+    );
+  }
+);
 ListItem.displayName = "ListItem";

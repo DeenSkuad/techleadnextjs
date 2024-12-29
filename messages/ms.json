@@ -1,5 +1,8 @@
 {
   "navigation": {
+    "title": "Tech Lead",
+    "toggleMenu": "Toggle navigation menu",
+    "talkToUs": "Hubungi Kami",
     "services": "Perkhidmatan",
     "products": "Produk",
     "aboutus": "Tentang Kami",
@@ -9,9 +12,9 @@
     "servicesDescription": "Terokai pelbagai perkhidmatan kami"
   },
   "hero": {
-    "badge": "Bersedia untuk projek baru",
+    "badge": "Tersedia untuk projek baru",
     "subtitle": "Rakan kongsi anda dalam",
-    "title": "Penyelesaian Teknologi",
+    "title": "Penyelesaian teknologi",
     "description": "Pakar dalam perundingan, dan pembangunan laman web, aplikasi mudah alih, dan platform SaaS.",
     "buttons": {
       "ourWork": "Kerja Kami",
@@ -22,7 +25,22 @@
     "title": "Perkhidmatan Kami",
     "webdevelopment": {
       "title": "Pembangunan Web",
-      "description": "Kami membina laman web untuk perniagaan pelbagai saiz"
+      "description": "Kami membina laman web untuk perniagaan pelbagai saiz",
+      "features": [
+        "Aplikasi Web Tersuai",
+        "Penyelesaian E-dagang",
+        "Aplikasi Web Progresif (PWA)",
+        "Pembangunan API",
+        "Integrasi Pangkalan Data",
+        "Penempatan Awan"
+      ],
+      "process": [
+        { "title": "Penemuan", "description": "Memahami keperluan dan matlamat anda" },
+        { "title": "Perancangan", "description": "Pemilihan seni bina dan tumpukan teknologi" },
+        { "title": "Pembangunan", "description": "Pembangunan Agile dengan kemas kini berkala" },
+        { "title": "Pengujian", "description": "Jaminan kualiti dan ujian prestasi" },
+        { "title": "Penempatan", "description": "Sokongan pelancaran dan penyelenggaraan" }
+      ]
     },
     "cybersecurity": {
       "title": "Keselamatan Siber",
@@ -34,7 +52,9 @@
     },
     "training": {
       "title": "Latihan",
-      "description": "Latihan FE & BE untuk pasukan dalaman anda"
+      "description": "Latihan FE & BE untuk pasukan dalaman anda",
+      "process": "Process content in Malay",
+      "features": "Features content in Malay"
     },
     "consulting": {
       "title": "Perundingan",
@@ -42,15 +62,21 @@
     },
     "androidapp": {
       "title": "Pembangunan Android",
-      "description": "Aplikasi Android yang disesuaikan untuk keperluan perniagaan anda"
+      "description": "Aplikasi Android yang disesuaikan untuk keperluan perniagaan anda",
+      "features": "Android app features in Malay",
+      "process": "Android app process in Malay"
     },
     "iosapp": {
       "title": "Pembangunan iOS",
-      "description": "Aplikasi iOS natif yang dibina untuk prestasi"
+      "description": "Aplikasi iOS natif yang dibina untuk prestasi",
+      "features": "iOS app features in Malay",
+      "process": "iOS app process in Malay"
     },
     "cloud": {
       "title": "Perkhidmatan Awan",
-      "description": "Penyelesaian dan pengurusan AWS, Azure, dan Google Cloud"
+      "description": "Penyelesaian dan pengurusan AWS, Azure, dan Google Cloud",
+      "features": "Cloud features in Malay",
+      "process": "Cloud process in Malay"
     },
     "devops": {
       "title": "DevOps",
@@ -59,6 +85,35 @@
     "ai": {
       "title": "Penyelesaian AI",
       "description": "Integrasi Kecerdasan Buatan dan Pembelajaran Mesin"
+    },
+    "hero": {
+      "badge": "PERKHIDMATAN",
+      "subtitle": "Transformasi Kehadiran Digital Anda",
+      "description": "Kami membantu perniagaan anda berkembang dalam era digital"
+    },
+    "hero2": {
+      "title": "Kami bekerja dengan",
+      "subtitle": "Penyelesaian Digital Terkini",
+      "description": "Kami membantu perniagaan anda berkembang dalam era digital"
+    },
+    "tabs": {
+      "mission": {
+        "title": "Misi",
+        "content": "Kami bertujuan untuk memudahkan proses yang kompleks, meningkatkan kecekapan operasi, dan mendorong pertumbuhan melalui perisian dan perkhidmatan inovatif kami."
+      },
+      "vision": {
+        "title": "Visi",
+        "content": "Di jantung visi kami adalah masa depan di mana perniagaan memanfaatkan kuasa teknologi untuk mencapai pencapaian luar biasa."
+      },
+      "values": {
+        "title": "Nilai",
+        "content": "Kami memegang standard etika tertinggi, memastikan ketelusan, kejujuran, dan kepercayaan dalam semua interaksi kami."
+      }
+    },
+    "team": {
+      "label": "AHLI PASUKAN",
+      "title": "Kami adalah pasukan yang didorong oleh hasil",
+      "description": "Dengan semangat untuk inovasi dan dedikasi kepada kecemerlangan, kami membawa kepakaran yang pelbagai kepada setiap projek."
     }
   },
   "products": {
@@ -115,6 +170,30 @@
           { "title": "Analitik Prestasi", "description": "Penjejakan prestasi pekerja" }
         ]
       }
+    },
+    "hero2": {
+      "title": "Produk Kami",
+      "subtitle": "Penyelesaian Inovatif",
+      "description": "Terokai rangkaian penyelesaian perusahaan kami"
+    },
+    "tabs": {
+      "mission": {
+        "title": "Misi",
+        "content": "Kami bertujuan untuk memudahkan proses yang kompleks, meningkatkan kecekapan operasi, dan mendorong pertumbuhan melalui perisian dan perkhidmatan inovatif kami."
+      },
+      "vision": {
+        "title": "Visi",
+        "content": "Di jantung visi kami adalah masa depan di mana perniagaan memanfaatkan kuasa teknologi untuk mencapai pencapaian luar biasa."
+      },
+      "values": {
+        "title": "Nilai",
+        "content": "Kami memegang standard etika tertinggi, memastikan ketelusan, kejujuran, dan kepercayaan dalam semua interaksi kami."
+      }
+    },
+    "team": {
+      "label": "AHLI PASUKAN",
+      "title": "Kami adalah pasukan yang didorong oleh hasil",
+      "description": "Dengan semangat untuk inovasi dan dedikasi kepada kecemerlangan, kami membawa kepakaran yang pelbagai kepada setiap projek."
     }
   },
   "about": {

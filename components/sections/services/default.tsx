@@ -1,5 +1,6 @@
+"use client";
 import { IconContainer } from "@/components/ui/IconContainer";
-import React from "react";
+import { useTranslations } from 'next-intl';
 import { AiFillDollarCircle, AiOutlineAntDesign } from "react-icons/ai";
 // import { BsClipboardDataFill } from "react-icons/bs";
 import { BiSolidReport } from "react-icons/bi";
@@ -8,21 +9,23 @@ import { HiDocumentReport } from "react-icons/hi";
 import { RiFilePaper2Fill } from "react-icons/ri";
 import { Radar } from "@/components/ui/radar";
 
-export default function services() {
+export default function Services() {
+  const t = useTranslations('services');
+
   return (
     <section>
       <div className="relative flex h-96 w-full flex-col items-center justify-center space-y-4 overflow-hidden px-4">
-      <h2 className=" text-3xl font-bold text-slate-200 mb-8">Our Expertise</h2>
+        <h2 className="text-3xl font-bold text-slate-200 mb-8">{t('title')}</h2>
         <div className="mx-auto w-full max-w-3xl">
           <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0">
-            <IconContainer text="Web Development" delay={0.2} />
+            <IconContainer text={t('webdevelopment.title')} delay={0.2} />
             <IconContainer
               delay={0.4}
-              text="Mobile apps"
+              text={t('androidapp.title')}
               icon={<AiFillDollarCircle className="h-8 w-8 text-slate-600" />}
             />
             <IconContainer
-              text="UI/UX Design"
+              text={t('uiuxdesign.title')}
               delay={0.3}
               icon={<AiOutlineAntDesign className="h-8 w-8 text-slate-600" />}
             />

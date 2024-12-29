@@ -4,7 +4,6 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
 import { Product } from '@/types/product';
-// import Glow from '@/components/ui/glow';
 import { FiArrowRight } from 'react-icons/fi';
 
 interface ProductHeroProps {
@@ -16,8 +15,6 @@ export default function ProductHero({ product }: ProductHeroProps) {
 
   return (
     <section className="relative flex min-h-[60vh] items-center justify-center overflow-hidden py-24">
-      {/* <Glow variant="center" /> */}
-      
       <div className="container relative z-10 mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,7 +32,7 @@ export default function ProductHero({ product }: ProductHeroProps) {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
           >
-            {product.title}
+            {t(`${product.slug}.title`)}
           </motion.h1>
           
           <motion.p
@@ -44,7 +41,7 @@ export default function ProductHero({ product }: ProductHeroProps) {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mb-4 text-xl text-muted-foreground"
           >
-            {product.tagline}
+            {t(`${product.slug}.tagline`)}
           </motion.p>
 
           <motion.p
@@ -53,7 +50,7 @@ export default function ProductHero({ product }: ProductHeroProps) {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mb-8 text-lg text-muted-foreground"
           >
-            {product.description}
+            {t(`${product.slug}.description`)}
           </motion.p>
 
           <motion.div
@@ -63,7 +60,7 @@ export default function ProductHero({ product }: ProductHeroProps) {
             className="mt-8"
           >
             <Button variant="outline" size="lg">
-              {t('hero.cta')}
+              {t('nav.demo')}
               <FiArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </motion.div>

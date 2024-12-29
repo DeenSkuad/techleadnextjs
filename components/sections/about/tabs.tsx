@@ -2,31 +2,35 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { aboutContent } from "@/config/about";
-import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
-export function AboutTabs() {
+interface TabsContent {
+  mission: { title: string; content: string };
+  vision: { title: string; content: string };
+  values: { title: string; content: string };
+}
+
+export function AboutTabs({ content }: { content: TabsContent }) {
   const [activeTab, setActiveTab] = useState("mission");
-  const t = useTranslations('about');
+  const tabs = Object.entries(content);
 
   return (
     <section className="">
       <div className="mx-auto max-w-4xl">
         <div className="flex justify-center space-x-4 border-b">
-          {aboutContent.tabs.map((tab) => (
+          {tabs.map(([id, tab]) => (
             <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
+              key={id}
+              onClick={() => setActiveTab(id)}
               className={cn(
                 "relative px-4 py-2 text-sm font-medium transition-colors",
-                activeTab === tab.id
+                activeTab === id
                   ? "text-foreground"
                   : "text-muted-foreground hover:text-foreground"
               )}
             >
-              {t(`tabs.${tab.id}.title`)}
-              {activeTab === tab.id && (
+              {tab.title}
+              {activeTab === id && (
                 <motion.div
                   layoutId="activeTab"
                   className="absolute bottom-0 left-0 h-0.5 w-full bg-orange-500"
@@ -44,7 +48,7 @@ export function AboutTabs() {
           className="mt-8 text-center"
         >
           <p className="text-xs text-muted-foreground">
-            {t(`tabs.${activeTab}.content`)}
+            {content[activeTab as keyof TabsContent].content}
           </p>
         </motion.div>
       </div>

@@ -1,47 +1,63 @@
-import { getTranslations } from "next-intl/server";
-import { navigationItems } from "@/config/navigation";
-import { AnimatedTitle } from "@/components/AnimatedTitle";
-import { AnimatedDescription } from "@/components/AnimatedDescription";
-import { notFound } from "next/navigation";
-import { unstable_setRequestLocale } from "next-intl/server";
+// app/[locale]/services/[slug]/page.tsx
+import { PageTransition } from '@/components/PageTransition';
+import { locales } from "@/lib/i18n/config";
+import { TeamSection } from "@/components/sections/about/team";
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { getServiceData } from '@/config/services';
+import { notFound } from 'next/navigation';
+import { servicesSlugs } from '@/config/services';
+import { ServiceHero } from '@/components/sections/services/hero'
+import { Tabs } from '@/components/ui/tabs';
 
-export default async function ServicePage({
-  params: { locale, slug },
-}: {
-  params: { locale: string; slug: string };
-}) {
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations();
+export async function generateStaticParams() {
+  return servicesSlugs.map((slug) => ({
+    slug,
+  }));
+}
 
-  const serviceInfo = navigationItems.services.find(
-    (service) => service.slug === slug,
-  );
+export default async function ServicePage({ params }: { params: { slug: string, locale: string } }) {
+  unstable_setRequestLocale(params.locale);
+  const serviceData = await getServiceData(params.slug, params.locale);
+  const t = await getTranslations({ locale: params.locale, namespace: 'services' });
 
-  if (!serviceInfo) {
+  if (!serviceData) {
     notFound();
   }
 
-  return (
-    <div className="min-h-screen">
-      <div className="px-4 py-20">
-        <AnimatedTitle>
-          <h1 className="text-center text-4xl font-bold text-slate-200 md:text-6xl">
-            {t(`services.${serviceInfo.slug}.title`)}
-          </h1>
-        </AnimatedTitle>
-        <AnimatedDescription>
-          <p className="text-slate-400">
-            {t(`services.${serviceInfo.slug}.description`)}
-          </p>
-        </AnimatedDescription>
-      </div>
-    </div>
-  );
-}
+  const content = {
+    hero: {
+      title: serviceData.title,
+      subtitle: t('hero.subtitle'),
+      description: serviceData.description
+    },
+    hero2: {
+      title: t('hero2.title'),
+      subtitle: t('hero2.subtitle'),
+      description: t('hero2.description')
+    },
+    tabs: {
+      mission: {
+        title: t('tabs.mission.title'),
+        content: t('tabs.mission.content')
+      },
+      vision: {
+        title: t('tabs.vision.title'),
+        content: t('tabs.vision.content')
+      },
+      values: {
+        title: t('tabs.values.title'),
+        content: t('tabs.values.content')
+      }
+    },
+    features: serviceData.features || [],
+    process: serviceData.process || []
+  };
 
-export function generateStaticParams() {
-  return navigationItems.services.flatMap((service) => [
-    { locale: "en", slug: service.slug },
-    { locale: "ms", slug: service.slug },
-  ]);
+  return (
+    <PageTransition>
+      <main className="relative flex min-h-screen flex-col">
+        <ServiceHero content={content} />
+      </main>
+    </PageTransition>
+  );
 }

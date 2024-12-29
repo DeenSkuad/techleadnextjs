@@ -12,8 +12,12 @@ import { Menu } from "lucide-react";
 import LaunchUI from "../../logos/launch-ui";
 import { siteConfig } from "@/config/site";
 import LanguageSwitcher from "../../LanguageSwitcher";
+import { navigationConfig } from "@/config/navigation";
+import Link from "next/link";
+// import Link from "next/link";
 
 export default function Navbar() {
+  
   return (
     <header className="sticky top-0 z-50 -mb-4 px-4 pb-4">
       <div className="fade-bottom absolute left-0 h-24 w-full bg-background/15 backdrop-blur-lg"></div>
@@ -31,10 +35,10 @@ export default function Navbar() {
           </NavbarLeft>
           <NavbarRight>
             <LanguageSwitcher />
-            {/* <Button variant="default" asChild>
+            <Button variant="default" asChild className="hidden md:block">
               <a href={siteConfig.url}>Talk To Us</a>
-            </Button> */}
-            <Sheet>
+            </Button>
+            {/* <Sheet>
               <SheetTrigger asChild>
                 <Button
                   variant="ghost"
@@ -51,29 +55,16 @@ export default function Navbar() {
                     href={siteConfig.url}
                     className="flex items-center gap-2 text-xl font-bold"
                   >
-                    <span>Launch UI</span>
+                    <span>Tech Lead</span>
                   </a>
-                  <a
-                    href={siteConfig.url}
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Getting Started
-                  </a>
-                  <a
-                    href={siteConfig.url}
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Components
-                  </a>
-                  <a
-                    href={siteConfig.url}
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Documentation
-                  </a>
+                  {navigationConfig.mainNav.map((item) => (
+                    <div key={item.title}>
+                      <Link href={item.href || '/'} className="text-muted-foreground hover:text-foreground">{item.title}</Link>
+                    </div>
+                  ))}
                 </nav>
               </SheetContent>
-            </Sheet>
+            </Sheet> */}
           </NavbarRight>
         </NavbarComponent>
       </div>

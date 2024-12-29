@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
 import { FaTwitter } from "react-icons/fa";
 import Image from "next/image";
 
@@ -11,6 +10,14 @@ interface TeamMember {
   twitter: string;
   avatar: string;
   bgColor: string;
+}
+
+interface TeamSectionProps {
+  content: {
+    label: string;
+    title: string;
+    description: string;
+  };
 }
 
 const teamMembers: TeamMember[] = [
@@ -97,9 +104,7 @@ const itemVariants = {
   },
 };
 
-export function TeamSection() {
-  const t = useTranslations("about");
-
+export function TeamSection({ content }: TeamSectionProps) {
   return (
     <section className="my-20 px-4 md:px-20">
       <motion.div
@@ -110,12 +115,12 @@ export function TeamSection() {
         className="text-center"
       >
         <span className="text-sm font-medium tracking-wider text-primary">
-          {t("team.label")}
+          {content.label}
         </span>
         <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-          {t("team.title")}
+          {content.title}
         </h2>
-        <p className="mt-4 text-muted-foreground">{t("team.description")}</p>
+        <p className="mt-4 text-muted-foreground">{content.description}</p>
       </motion.div>
 
       <motion.div

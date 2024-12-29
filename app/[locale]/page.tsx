@@ -1,30 +1,31 @@
 // "use client";
 // src/app/[locale]/page.tsx
 
+import { locales } from "@/lib/i18n/config";
+import { getTranslations } from 'next-intl/server';
+import Products from "@/components/sections/products/default";
+import { PageTransition } from "@/components/PageTransition";
 import Hero from "@/components/sections/hero/default";
-import Logos from "@/components/sections/logos/default";
-import Items from "@/components/sections/items/default";
-// import FAQ from "@/components/sections/faq/default";
-
 import Services from "@/components/sections/services/default";
 import Works from "@/components/sections/works/default";
-import Products from "@/components/sections/products/default";
-import { unstable_setRequestLocale } from "next-intl/server";
 
-export default async function Home({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
-  unstable_setRequestLocale(locale);
+export function generateStaticParams() {
+  return locales.map((locale) => ({
+    locale
+  }));
+}
+
+export default async function LocalePage({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: 'home' });
+
   return (
-    <main className="bg-background text-foreground">
-      <Hero />
-      <Services />
-      <Works />
-      <Logos />
-      <Products />
-      <Items />
-    </main>
+    <PageTransition>
+      <main className="relative flex min-h-screen flex-col">
+        <Hero />
+        <Products />
+        <Services />
+        <Works />
+      </main>
+    </PageTransition>
   );
 }

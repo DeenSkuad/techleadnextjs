@@ -26,7 +26,47 @@
     "title": "Our Services",
     "webdevelopment": {
       "title": "Web Development",
-      "description": "We build custom websites for businesses of all sizes"
+      "description": "We build custom websites for businesses of all sizes",
+      "features": [
+        {
+          "title": "Custom Web Applications",
+          "description": "Tailored solutions for your business needs"
+        },
+        {
+          "title": "E-commerce Solutions",
+          "description": "Complete online store setups"
+        },
+        {
+          "title": "Progressive Web Apps",
+          "description": "Mobile-first web applications"
+        },
+        {
+          "title": "API Development",
+          "description": "Custom API integrations"
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery",
+          "description": "Understanding your needs and goals"
+        },
+        {
+          "title": "Planning",
+          "description": "Architecture and technology stack selection"
+        },
+        {
+          "title": "Development",
+          "description": "Agile development with regular updates"
+        },
+        {
+          "title": "Testing",
+          "description": "Quality assurance and performance testing"
+        },
+        {
+          "title": "Deployment",
+          "description": "Launch and maintenance support"
+        }
+      ]
     },
     "cybersecurity": {
       "title": "Cyber Security",
@@ -63,6 +103,36 @@
     "ai": {
       "title": "AI Solutions",
       "description": "Artificial Intelligence and Machine Learning integration"
+    },
+    "hero": {
+      "badge": "SERVICES",
+      "subtitle": "Transform Your Digital Presence",
+      "title": "Transform Your Digital Presence",
+      "description": "We help your business grow in the digital era"
+    },
+    "hero2": {
+      "title": "We work with",
+      "subtitle": "Latest Digital Solutions",
+      "description": "We help your business grow in the digital era"
+    },
+    "tabs": {
+      "mission": {
+        "title": "Mission",
+        "content": "We aim to simplify complex processes, enhance operational efficiency, and drive growth through our innovative software and services."
+      },
+      "vision": {
+        "title": "Vision",
+        "content": "At the heart of our vision is a future where businesses harness the power of technology to achieve remarkable feats."
+      },
+      "values": {
+        "title": "Values",
+        "content": "We uphold the highest ethical standards, ensuring transparency, honesty, and trust in all our interactions."
+      }
+    },
+    "team": {
+      "label": "TEAM MEMBERS",
+      "title": "We're a results driven team",
+      "description": "With a passion for innovation and dedication to excellence, we bring diverse expertise to every project."
     }
   },
   "products": {
@@ -123,6 +193,30 @@
         { "title": "Warehouse Operations", "description": "Optimize storage and picking" },
         { "title": "Supply Chain", "description": "End-to-end supply chain visibility" }
       ]
+    },
+    "hero2": {
+      "title": "Our Products",
+      "subtitle": "Innovative Solutions",
+      "description": "Discover our range of enterprise solutions"
+    },
+    "tabs": {
+      "mission": {
+        "title": "Mission",
+        "content": "We aim to simplify complex processes, enhance operational efficiency, and drive growth through our innovative software and services."
+      },
+      "vision": {
+        "title": "Vision",
+        "content": "At the heart of our vision is a future where businesses harness the power of technology to achieve remarkable feats."
+      },
+      "values": {
+        "title": "Values",
+        "content": "We uphold the highest ethical standards, ensuring transparency, honesty, and trust in all our interactions."
+      }
+    },
+    "team": {
+      "label": "TEAM MEMBERS",
+      "title": "We're a results driven team",
+      "description": "With a passion for innovation and dedication to excellence, we bring diverse expertise to every project."
     }
   },
   "about": {

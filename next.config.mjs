@@ -1,10 +1,9 @@
 import createNextIntlPlugin from 'next-intl/plugin';
-
+ 
 const withNextIntl = createNextIntlPlugin();
-
+ 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
+const config = {
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -13,7 +12,7 @@ const nextConfig = {
         hostname: 'aceternity.com',
       },
     ],
-  },
+  }
 };
-
-export default withNextIntl(nextConfig);
+ 
+export default withNextIntl(config);
