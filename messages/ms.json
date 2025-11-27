@@ -44,47 +44,130 @@
     },
     "cybersecurity": {
       "title": "Keselamatan Siber",
-      "description": "Kami menyediakan perkhidmatan keselamatan siber untuk melindungi perniagaan anda"
+      "description": "Kami menyediakan perkhidmatan keselamatan siber untuk melindungi perniagaan anda",
+      "features": [
+        { "title": "Audit Keselamatan", "description": "Penilaian keselamatan sistem yang menyeluruh" },
+        { "title": "Ujian Penembusan", "description": "Mengenal pasti kelemahan dalam sistem anda" },
+        { "title": "Pemantauan Keselamatan", "description": "Pengesanan dan tindak balas ancaman 24/7" }
+      ],
+      "process": [
+        { "title": "Penilaian", "description": "Penilaian keselamatan awal" },
+        { "title": "Perancangan", "description": "Pembangunan strategi keselamatan" },
+        { "title": "Pelaksanaan", "description": "Penempatan langkah keselamatan" },
+        { "title": "Pemantauan", "description": "Pengawasan keselamatan berterusan" }
+      ]
     },
     "uiuxdesign": {
       "title": "Reka Bentuk UI/UX",
-      "description": "Cipta laman web yang mesra pengguna dan menarik"
+      "description": "Cipta laman web yang mesra pengguna dan menarik",
+      "features": [
+        { "title": "Penyelidikan Pengguna", "description": "Memahami keperluan dan tingkah laku pengguna" },
+        { "title": "Wireframing", "description": "Perancangan susun atur dan struktur" },
+        { "title": "Reka Bentuk Visual", "description": "Mencipta antara muka yang menarik" }
+      ],
+      "process": [
+        { "title": "Penemuan", "description": "Memahami keperluan projek" },
+        { "title": "Reka Bentuk", "description": "Mencipta antara muka pengguna" },
+        { "title": "Pengujian", "description": "Ujian pengguna dan maklum balas" }
+      ]
     },
     "training": {
       "title": "Latihan",
       "description": "Latihan FE & BE untuk pasukan dalaman anda",
-      "process": "Process content in Malay",
-      "features": "Features content in Malay"
+      "features": [
+        { "title": "Pembangunan Frontend", "description": "Amalan pembangunan web moden" },
+        { "title": "Pembangunan Backend", "description": "Kemahiran pengaturcaraan server" },
+        { "title": "Amalan DevOps", "description": "Aliran kerja CI/CD dan penempatan" }
+      ],
+      "process": [
+        { "title": "Penilaian", "description": "Menilai tahap kemahiran semasa" },
+        { "title": "Perancangan", "description": "Program latihan yang disesuaikan" },
+        { "title": "Pelaksanaan", "description": "Sesi latihan praktikal" }
+      ]
     },
     "consulting": {
       "title": "Perundingan",
-      "description": "Kami menyediakan perkhidmatan perundingan untuk membantu meningkatkan perniagaan anda"
+      "description": "Kami menyediakan perkhidmatan perundingan untuk membantu meningkatkan perniagaan anda",
+      "features": [
+        { "title": "Penilaian Teknikal", "description": "Menilai sistem semasa" },
+        { "title": "Perancangan Strategi", "description": "Pembangunan pelan teknologi" },
+        { "title": "Seni Bina Penyelesaian", "description": "Reka penyelesaian berskala" }
+      ],
+      "process": [
+        { "title": "Penemuan", "description": "Memahami keperluan perniagaan" },
+        { "title": "Analisis", "description": "Penilaian sistem terperinci" },
+        { "title": "Cadangan", "description": "Pelan penambahbaikan strategik" }
+      ]
     },
     "androidapp": {
       "title": "Pembangunan Android",
       "description": "Aplikasi Android yang disesuaikan untuk keperluan perniagaan anda",
-      "features": "Android app features in Malay",
-      "process": "Android app process in Malay"
+      "features": [
+        { "title": "Pembangunan Natif", "description": "Aplikasi Android berprestasi tinggi" },
+        { "title": "Berbilang Platform", "description": "Penyelesaian React Native" },
+        { "title": "Play Store", "description": "Pengoptimuman kedai aplikasi" }
+      ],
+      "process": [
+        { "title": "Perancangan", "description": "Reka bentuk seni bina aplikasi" },
+        { "title": "Pembangunan", "description": "Proses pembangunan Agile" },
+        { "title": "Pengujian", "description": "Jaminan kualiti" }
+      ]
     },
     "iosapp": {
       "title": "Pembangunan iOS",
       "description": "Aplikasi iOS natif yang dibina untuk prestasi",
-      "features": "iOS app features in Malay",
-      "process": "iOS app process in Malay"
+      "features": [
+        { "title": "Pembangunan Swift", "description": "Aplikasi iOS moden" },
+        { "title": "Reka Bentuk UI/UX", "description": "Garis panduan reka bentuk Apple" },
+        { "title": "App Store", "description": "Pengedaran dan kemas kini" }
+      ],
+      "process": [
+        { "title": "Reka Bentuk", "description": "Reka bentuk khusus iOS" },
+        { "title": "Pembangunan", "description": "Pelaksanaan Swift" },
+        { "title": "Penempatan", "description": "Penyerahan App Store" }
+      ]
     },
     "cloud": {
       "title": "Perkhidmatan Awan",
       "description": "Penyelesaian dan pengurusan AWS, Azure, dan Google Cloud",
-      "features": "Cloud features in Malay",
-      "process": "Cloud process in Malay"
+      "features": [
+        { "title": "Migrasi Awan", "description": "Peralihan lancar ke awan" },
+        { "title": "Persediaan Infrastruktur", "description": "Seni bina awan berskala" },
+        { "title": "Pengoptimuman Kos", "description": "Pengurusan sumber yang cekap" }
+      ],
+      "process": [
+        { "title": "Penilaian", "description": "Kajian infrastruktur semasa" },
+        { "title": "Perancangan", "description": "Pembangunan strategi migrasi" },
+        { "title": "Pelaksanaan", "description": "Penempatan dan persediaan awan" }
+      ]
     },
     "devops": {
       "title": "DevOps",
-      "description": "Permudahkan aliran kerja pembangunan dan operasi anda"
+      "description": "Permudahkan aliran kerja pembangunan dan operasi anda",
+      "features": [
+        { "title": "Saluran CI/CD", "description": "Aliran kerja penempatan automatik" },
+        { "title": "Infrastruktur sebagai Kod", "description": "Peruntukan automatik" },
+        { "title": "Pemantauan", "description": "Penjejakan prestasi dan kesihatan" }
+      ],
+      "process": [
+        { "title": "Penilaian", "description": "Analisis aliran kerja semasa" },
+        { "title": "Pelaksanaan", "description": "Persediaan amalan DevOps" },
+        { "title": "Pengoptimuman", "description": "Penambahbaikan berterusan" }
+      ]
     },
     "ai": {
       "title": "Penyelesaian AI",
-      "description": "Integrasi Kecerdasan Buatan dan Pembelajaran Mesin"
+      "description": "Integrasi Kecerdasan Buatan dan Pembelajaran Mesin",
+      "features": [
+        { "title": "Pembelajaran Mesin", "description": "Pembangunan model ML tersuai" },
+        { "title": "Analitik Data", "description": "Wawasan data lanjutan" },
+        { "title": "Integrasi AI", "description": "Penyelesaian automasi pintar" }
+      ],
+      "process": [
+        { "title": "Penilaian Data", "description": "Menilai keperluan data" },
+        { "title": "Pembangunan Model", "description": "Penciptaan model AI/ML" },
+        { "title": "Integrasi", "description": "Pelaksanaan sistem" }
+      ]
     },
     "hero": {
       "badge": "PERKHIDMATAN",
@@ -117,26 +200,6 @@
     }
   },
   "products": {
-    "assetmanagement": {
-      "title": "Pengurusan Aset",
-      "description": "Urus aset dan inventori anda dengan mudah, kami ada penyelesaiannya."
-    },
-    "hrms": {
-      "title": "HRMS",
-      "description": "Urus pekerja anda dan tingkatkan perniagaan anda."
-    },
-    "ecommerce": {
-      "title": "e-Dagang",
-      "description": "Platform e-dagang berbilang vendor untuk perniagaan anda. segerak dengan mana-mana pasaran."
-    },
-    "elearning": {
-      "title": "e-Pembelajaran",
-      "description": "Platform pembelajaran dalam talian untuk perniagaan anda. kami menyediakan sistem pengurusan pembelajaran terbaik."
-    },
-    "inventoryandwarehouse": {
-      "title": "Inventori & Gudang",
-      "description": "Perkhidmatan pengurusan inventori dan gudang untuk menjejaki inventori dan gudang anda."
-    },
     "solutions": {
       "enterprise": "Penyelesaian Perusahaan"
     },
@@ -145,6 +208,33 @@
       "subtitle": "Terokai penyelesaian inovatif yang disesuaikan untuk keperluan perniagaan anda",
       "cta": "Ketahui Lebih Lanjut"
     },
+    "assetmanagement": {
+      "title": "Pengurusan Aset",
+      "description": "Urus aset dan inventori anda dengan mudah, kami ada penyelesaiannya.",
+      "tagline": "Optimumkan Kitaran Hayat Aset Anda dengan Mudah"
+    },
+    "hrms": {
+      "title": "HRMS",
+      "description": "Urus pekerja anda dan tingkatkan perniagaan anda.",
+      "tagline": "Permudahkan Operasi HR Anda"
+    },
+    "ecommerce": {
+      "title": "e-Dagang",
+      "description": "Platform e-dagang berbilang vendor untuk perniagaan anda. segerak dengan mana-mana pasaran.",
+      "tagline": "Penyelesaian Peruncitan Bersepadu"
+    },
+    "elearning": {
+      "title": "e-Pembelajaran",
+      "description": "Platform pembelajaran dalam talian untuk perniagaan anda. kami menyediakan sistem pengurusan pembelajaran terbaik.",
+      "tagline": "Pengurusan Pembelajaran Moden"
+    },
+    "inventoryandwarehouse": {
+      "title": "Inventori & Gudang",
+      "description": "Perkhidmatan pengurusan inventori dan gudang untuk menjejaki inventori dan gudang anda.",
+      "tagline": "Kawalan Inventori Pintar"
+    },
+    
+    
     "nav": {
       "back": "Kembali ke Produk",
       "demo": "Minta Demo"
@@ -225,6 +315,18 @@
       "label": "AHLI PASUKAN",
       "title": "Kami adalah pasukan yang didorong oleh hasil",
       "description": "Dengan semangat untuk inovasi dan dedikasi kepada kecemerlangan, kami membawa kepakaran yang pelbagai kepada setiap projek yang kami jalankan."
+    }
+  },
+  "home": {
+    "title": "Selamat Datang",
+    "description": "Portal Tech Lead",
+    "hero": {
+      "title": "Membangunkan Pemimpin Teknologi Masa Depan",
+      "description": "Kami membantu anda membina kemahiran kepimpinan teknikal yang diperlukan untuk berjaya dalam industri teknologi yang sentiasa berubah"
+    },
+    "features": {
+      "title": "Ciri-ciri Utama",
+      "description": "Pelbagai alat dan sumber untuk membantu anda berkembang"
     }
   }
 } 

@@ -1,0 +1,30 @@
+{
+  "navigation": {
+    "About Us": "About Us",
+    "Our Work": "Our Work",
+    "Training": "Training",
+    "services": "Services",
+    "servicesDescription": "Explore our wide range of services.",
+    "products": "Products"
+  },
+  "services": {
+    "slug1": {
+      "title": "Service 1",
+      "description": "Description for Service 1"
+    },
+    "slug2": {
+      "title": "Service 2",
+      "description": "Description for Service 2"
+    }
+  },
+  "products": {
+    "slug1": {
+      "title": "Product 1",
+      "description": "Description for Product 1"
+    },
+    "slug2": {
+      "title": "Product 2",
+      "description": "Description for Product 2"
+    }
+  }
+}

@@ -12,96 +12,102 @@ export default function works() {
 
 export const worksitem = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      "/images/clients/banner/Satria_TD_Banner 1.png",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+      "/images/clients/banner/Satria_TD_Banner 2.png",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+      "/images/clients/banner/mhcotryze_banner 1.png",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+      "/images/clients/banner/Assets_management.png",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-  },
-
-  {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+      "/images/clients/banner/Satria_TD_Banner 1.png",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+      "/images/clients/banner/Assets_management.png",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+      "/images/clients/banner/mhcotryze_banner 1.png",
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+      "/images/clients/banner/Satria_TD_Banner 2.png",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  },
-
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+      "/images/clients/banner/mhcotryze_banner 1.png",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+      "/images/clients/banner/Satria_TD_Banner 2.png",
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+      "/images/clients/banner/Satria_TD_Banner 1.png",
   },
   {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+      "/images/clients/banner/Satria_TD_Banner 2.png",
   },
+  {
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
+    thumbnail:
+      "/images/clients/banner/Satria_TD_Banner 1.png",
+  },
+  {
+    title: "Satria TD Apps",
+    link: "#",
+    description: "",
+    thumbnail:
+      "/images/clients/banner/Satria_TD_Banner 2.png",
+  },
+  
 ];

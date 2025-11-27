@@ -2,6 +2,8 @@
 // src/components/sections/services/hero.tsx
 import { motion } from 'framer-motion'
 import { Tabs } from "@/components/ui/tabs";
+import { GallerySection } from "@/components/sections/services/gallery";
+import { ParallaxScroll } from '@/components/parallax-scroll';
 
 interface ServiceHeroProps {
   content: {
@@ -30,6 +32,23 @@ interface ServiceHeroProps {
     }>;
   };
 }
+
+const images = [
+  "/images/traning/pustekma/1.webp",
+  "/images/traning/pustekma/2.webp",
+  "/images/traning/pustekma/3.webp",
+  "/images/traning/pustekma/4.webp",
+  "/images/traning/pustekma/5.webp",
+  "/images/traning/pustekma/6.webp",
+  "/images/traning/pustekma/7.webp",
+  "/images/traning/pustekma/8.webp",
+  "/images/traning/pustekma/10.webp",
+  "/images/traning/pustekma/11.webp",
+  "/images/traning/pustekma/12.webp",
+  "/images/traning/pustekma/13.heic",
+
+ 
+];
 
 export function ServiceHero({ content }: ServiceHeroProps) {
   return (
@@ -65,7 +84,9 @@ export function ServiceHero({ content }: ServiceHeroProps) {
         </div>
       </section>
 
-      <section className="relative bg-card px-4 md:px-20">
+      
+
+      <section className="hidden relative bg-card px-4 md:px-20">
         <div className="py-24">
           <div className="">
             <motion.div
@@ -127,29 +148,10 @@ export function ServiceHero({ content }: ServiceHeroProps) {
         </div>
       </section>
 
-      {/* Process Section */}
-      {/* <section className="py-24">
-        <div className="container">
-          <h2 className="text-center text-3xl font-bold">Our Process</h2>
-          <div className="mt-12 grid gap-8 md:grid-cols-3 lg:grid-cols-5">
-            {content.process.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative text-center"
-              >
-                <div className="mb-4 text-4xl font-bold text-primary">
-                  {index + 1}
-                </div>
-                <h3 className="mb-2 font-semibold">{step.title}</h3>
-                <p className="text-sm text-muted-foreground">{step.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
+      {/* <GallerySection content={content} /> */}
+      <ParallaxScroll images={images} />
+
+      
     </>
   );
 } 

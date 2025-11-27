@@ -4,6 +4,8 @@ import { AboutHero } from "@/components/sections/about/hero";
 import { TeamSection } from "@/components/sections/about/team";
 import { getTranslations } from 'next-intl/server';
 import { createTranslator } from 'next-intl';
+import { TimelineComponent } from '@/components/TimelineComponent';
+
 
 
 export async function generateStaticParams() {
@@ -50,9 +52,10 @@ export default async function AboutPage({ params: { locale } }: { params: { loca
 
   return (
     <PageTransition>
-      <main className="relative flex min-h-screen flex-col">
-        <AboutHero content={aboutProps} />
+      <main className="relative flex min-h-screen  flex-col justify-center items-center">
+        {/* <AboutHero content={aboutProps} /> */}
         <TeamSection content={aboutProps.team} />
+        <TimelineComponent />
       </main>
     </PageTransition>
   );

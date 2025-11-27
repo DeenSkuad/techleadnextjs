@@ -22,67 +22,60 @@ interface TeamSectionProps {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "John Smith",
+    name: "Razlan Razak",
     role: "CEO, founder",
-    twitter: "@stylokit",
-    avatar: "/memoji/1.png",
-    bgColor: "bg-yellow-100",
+    twitter: "@razlanrazak",
+    avatar: "/images/team/Razlan.png",
+    bgColor: "bg-white",
   },
   {
-    name: "David Miller",
+    name: "Zahrin",
     role: "COO",
-    twitter: "@stylokit",
-    avatar: "/memoji/2.png",
-    bgColor: "bg-orange-100",
+    twitter: "@zahrin",
+    avatar: "/images/team/Zahrin.png",
+    bgColor: "bg-white",
   },
   {
-    name: "Amanda Davis",
-    role: "Head of marketing",
+    name: "Ammar",
+    role: "Software Developer",
+    twitter: "@ammar",
+    avatar: "/images/team/Ammar.png",
+    bgColor: "bg-white",
+  },
+  // {
+  //   name: "Sophie White",
+  //   role: "UX/UI Designer",
+  //   twitter: "@stylokit",
+  //   avatar: "/images/team/Sophie.png",
+  //   bgColor: "bg-transparent",
+  // },
+  {
+    name: "Harith",
+    role: "Software Developer",
     twitter: "@stylokit",
-    avatar: "/memoji/3.png",
-    bgColor: "bg-red-100",
+    avatar: "/images/team/Andrew.png",
+    bgColor: "bg-transparent",
+  },
+  // {
+  //   name: "Michael Lee",
+  //   role: "Analyst",
+  //   twitter: "@stylokit",
+  //   avatar: "/images/team/Michael.png",
+  //   bgColor: "bg-transparent",
+  // },
+  {
+    name: "Faiz",
+    role: "Jr Software Developer",
+    twitter: "@Faiz",
+    avatar: "/images/team/Faiz.png",
+    bgColor: "bg-transparent",
   },
   {
-    name: "Robert Turner",
-    role: "Software engineer",
-    twitter: "@stylokit",
-    avatar: "/memoji/4.png",
-    bgColor: "bg-pink-100",
-  },
-  {
-    name: "Sophie White",
+    name: "Mahyudin",
     role: "UX/UI Designer",
-    twitter: "@stylokit",
-    avatar: "/memoji/5.png",
-    bgColor: "bg-rose-100",
-  },
-  {
-    name: "Andrew Wilson",
-    role: "Sales",
-    twitter: "@stylokit",
-    avatar: "/memoji/6.png",
-    bgColor: "bg-blue-100",
-  },
-  {
-    name: "Michael Lee",
-    role: "Analyst",
-    twitter: "@stylokit",
-    avatar: "/memoji/7.png",
-    bgColor: "bg-gray-100",
-  },
-  {
-    name: "Olena Kurcherenko",
-    role: "Marketing specialist",
-    twitter: "@stylokit",
-    avatar: "/memoji/8.png",
-    bgColor: "bg-purple-100",
-  },
-  {
-    name: "Anastasia Solovyova",
-    role: "Product manager",
-    twitter: "@stylokit",
-    avatar: "/memoji/9.png",
-    bgColor: "bg-yellow-100",
+    twitter: "@mahyudin",
+    avatar: "/images/team/Din.png",
+    bgColor: "bg-white",
   },
 ];
 
@@ -106,7 +99,7 @@ const itemVariants = {
 
 export function TeamSection({ content }: TeamSectionProps) {
   return (
-    <section className="my-20 px-4 md:px-20">
+    <section className="my-20 px-4 flex  flex-col justify-center items-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -128,16 +121,16 @@ export function TeamSection({ content }: TeamSectionProps) {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 w-screen items-center px-20"
       >
         {teamMembers.map((member) => (
           <motion.div
             key={member.name}
             variants={itemVariants}
-            className="group relative rounded-2xl bg-card p-6 transition-shadow hover:shadow-lg"
+            className="group relative rounded-2xl bg-card p-6 transition-shadow hover:shadow-lg border"
           >
             <div className="flex items-center gap-4">
-              <div className={`rounded-full ${member.bgColor} p-2`}>
+              <div className={`rounded-full ${member.bgColor}`}>
                 <Image
                   src={member.avatar}
                   alt={member.name}
@@ -149,7 +142,7 @@ export function TeamSection({ content }: TeamSectionProps) {
               <div>
                 <h3 className="font-medium">{member.name}</h3>
                 <p className="text-sm text-muted-foreground">{member.role}</p>
-                <a
+                {/* <a
                   href={`https://twitter.com/${member.twitter}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -157,7 +150,7 @@ export function TeamSection({ content }: TeamSectionProps) {
                 >
                   <FaTwitter className="h-4 w-4" />
                   <span>{member.twitter}</span>
-                </a>
+                </a> */}
               </div>
             </div>
           </motion.div>

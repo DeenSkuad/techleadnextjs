@@ -6,23 +6,25 @@ import { NavigationItem, NavigationItems } from '@/types/navigation';
 export const navigationConfig: { mainNav: NavigationItem[] } = {
   mainNav: [
     {
-      title: "aboutus",
+      title: "About Us",
       href: "/about-us",
       isLink: true,
     },
+    // {
+    //   title: "casestudies",
+    //   href: "/case-studies",
+    //   isLink: true,
+    // },
     {
-      title: "casestudies",
-      href: "/case-studies",
+      title: "Our Work",
+      // sectionId: "ourwork",
+      href: "/works",
       isLink: true,
-    },
-    {
-      title: "ourwork",
-      sectionId: "ourwork",
       isScroll: true,
     },
     {
-      title: "training",
-      href: "/training",
+      title: "Training",
+      href: "/services/training/",
       isLink: true,
     },
   ]
@@ -44,7 +46,7 @@ export function getNavigationItems(locale: string | undefined): NavigationItems 
     })),
     mainNav: navigationConfig.mainNav.map(item => ({
       ...item,
-      href: item.href || '/',
+      href: item.href,
     }))
   };
 }

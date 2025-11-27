@@ -12,11 +12,14 @@
     "format:check": "prettier --check .",
     "clean": "rm -rf .next node_modules/.cache",
     "check-types": "tsc --noEmit",
-    "pre-deploy": "yarn clean && yarn install && yarn format && yarn lint:fix && yarn check-types && yarn build"
+    "pre-deploy": "yarn clean && yarn install && yarn format && yarn lint:fix && yarn check-types && yarn build",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "export": "next build",
+    "static": "serve out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
-    "@radix-ui/react-accordion": "^1.2.0",
+    "@radix-ui/react-accordion": "^1.2.0", 
     "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-dropdown-menu": "^2.1.1",
@@ -32,9 +35,10 @@
     "framer-motion": "^11.15.0",
     "global": "^4.4.0",
     "lucide-react": "^0.441.0",
+    "motion": "^12.16.0",
     "netlify-cli": "^17.38.1",
     "next": "14.2.11",
-    "next-intl": "3.9.1",
+    "next-intl": "^3.26.3",
     "next-themes": "^0.3.0",
     "nodemailer": "^6.9.16",
     "react": "^18",
@@ -58,6 +62,5 @@
     "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  },
-  "type": "module"
+  }
 }

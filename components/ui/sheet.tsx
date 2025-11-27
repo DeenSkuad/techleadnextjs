@@ -1,9 +1,12 @@
+// src/components/ui/sheet.tsx
+
 "use client";
 
 import * as React from "react";
 import * as SheetPrimitive from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import { cva, type VariantProps } from "class-variance-authority";
+import { motion, AnimatePresence } from "framer-motion"; 
 
 import { cn } from "@/lib/utils";
 
@@ -53,25 +56,68 @@ interface SheetContentProps
   extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
     VariantProps<typeof sheetVariants> {}
 
-const SheetContent = React.forwardRef<
-  React.ElementRef<typeof SheetPrimitive.Content>,
-  SheetContentProps
->(({ side = "right", className, children, ...props }, ref) => (
-  <SheetPortal>
-    <SheetOverlay />
-    <SheetPrimitive.Content
-      ref={ref}
-      className={cn(sheetVariants({ side }), className)}
-      {...props}
-    >
-      <SheetPrimitive.Close className="absolute right-6 top-6 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
-        <Cross2Icon className="h-5 w-5" />
-        <span className="sr-only">Close</span>
-      </SheetPrimitive.Close>
-      {children}
-    </SheetPrimitive.Content>
-  </SheetPortal>
-));
+    const SheetContent = React.forwardRef<
+    React.ElementRef<typeof SheetPrimitive.Content>,
+    SheetContentProps
+  >(({ side = "right", className, children, ...props }, ref) => (
+    <SheetPortal>
+      <AnimatePresence>
+        <SheetPrimitive.Overlay
+          asChild
+          forceMount
+          className={cn(
+            "fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
+            className
+          )}
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+          />
+        </SheetPrimitive.Overlay>
+      </AnimatePresence>
+  
+      <SheetPrimitive.Content forceMount asChild ref={ref} {...props}>
+        <motion.div
+          className={cn(
+            "fixed z-50 gap-4 bg-background p-6 shadow-lg",
+            side === "right" && "inset-y-0 right-0 h-full w-3/4 border-l sm:max-w-sm"
+          )}
+          initial={{ x: "100%" }}
+          animate={{
+            x: 0,
+            transition: {
+              type: "spring",
+              damping: 25,
+              stiffness: 300,
+              mass: 0.5
+            }
+          }}
+          exit={{
+            x: "100%",
+            transition: { 
+              type: "spring", 
+              damping: 30, 
+              stiffness: 300 
+            }
+          }}
+          style={{
+            borderTopLeftRadius: "1.5rem",
+            borderBottomLeftRadius: "1.5rem",
+            boxShadow: "-10px 0 30px -10px rgba(0, 0, 0, 0.15)"
+          }}
+        >
+          <SheetPrimitive.Close className="absolute right-8 top-6 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
+            <Cross2Icon className="h-5 w-5" />
+            <span className="sr-only">Close</span>
+          </SheetPrimitive.Close>
+          {children}
+        </motion.div>
+      </SheetPrimitive.Content>
+    </SheetPortal>
+  ));
 SheetContent.displayName = SheetPrimitive.Content.displayName;
 
 const SheetHeader = ({

@@ -1,13 +1,12 @@
-import { PageTransition } from '@/components/PageTransition';
-import { notFound } from 'next/navigation';
-import { locales } from "@/lib/i18n/config";
-import { getTranslations } from 'next-intl/server';
-import { AboutHero } from "@/components/sections/about/hero";
+import { PageTransition } from "@/components/PageTransition";
+import { locales } from "@/config/locales";
+import { notFound } from "next/navigation";
+import { getProductContent, productSlugs } from "@/lib/products";
+import { HeroScroll } from "@/components/HeroScroll";
 import { TeamSection } from "@/components/sections/about/team";
-import { productSlugs } from '@/lib/products';
 
 export async function generateStaticParams() {
-  return locales.flatMap((locale) => 
+  return locales.flatMap((locale) =>
     productSlugs.map((slug) => ({
       locale,
       slug,
@@ -15,51 +14,33 @@ export async function generateStaticParams() {
   );
 }
 
-export default async function ProductPage({ params }: { params: { slug: string, locale: string } }) {
-  const t = await getTranslations({ locale: params.locale, namespace: 'products' });
-
-  if (!productSlugs.includes(params.slug as typeof productSlugs[number])) {
-    notFound();
-  }
-
-  const content = {
-    hero: {
-      title: t(`${params.slug}.title`),
-      subtitle: t(`${params.slug}.tagline`),
-      description: t(`${params.slug}.description`)
-    },
-    hero2: {
-      title: t('hero2.title'),
-      subtitle: t('hero2.subtitle'),
-      description: t('hero2.description')
-    },
-    tabs: {
-      mission: {
-        title: t('tabs.mission.title'),
-        content: t('tabs.mission.content')
-      },
-      vision: {
-        title: t('tabs.vision.title'),
-        content: t('tabs.vision.content')
-      },
-      values: {
-        title: t('tabs.values.title'),
-        content: t('tabs.values.content')
-      }
-    }
-  };
-
-  const teamContent = {
-    label: t('team.label'),
-    title: t('team.title'),
-    description: t('team.description')
-  };
+export default async function ProductPage({
+  params,
+}: {
+  params: { slug: string; locale: string };
+}) {
+  const content = await getProductContent(params.slug, params.locale);
+  if (!content) notFound();
 
   return (
     <PageTransition>
       <main className="relative flex min-h-screen flex-col">
-        <AboutHero content={content} />
-        <TeamSection content={teamContent} />
+        <HeroScroll params={params} />
+        {/* <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 mx-auto px-4 md:px-20">
+          {productSlugs.map((slug) => (
+            <a
+              key={slug}
+              href={`/${params.locale}/products/${slug}`}
+              className="p-6 rounded-lg border hover:bg-slate-800 transition-colors"
+            >
+              <h2 className="text-xl font-bold text-slate-200 mb-2">
+                {content.hero.title}
+              </h2>
+              <p className="text-slate-400">{content.hero.description}</p>
+            </a>
+          ))}
+        </div> */}
+        <TeamSection content={content.team} />
       </main>
     </PageTransition>
   );

@@ -31,3 +31,11 @@ All the components are in the `components` folder.
 ## License
 
 This project is licensed under the [MIT License](https://github.com/launch-ui/launch-ui/blob/main/LICENSE.md).
+
+## Todo
+1. Client logo
+2. Section Work & Page Work
+3. Page Our Work Translations BM/EN
+4. Product Page Content
+5. About Us Page Content
+6. About Us Page 

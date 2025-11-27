@@ -70,39 +70,130 @@
     },
     "cybersecurity": {
       "title": "Cyber Security",
-      "description": "We provide cyber security services to protect your business"
+      "description": "We provide cyber security services to protect your business",
+      "features": [
+        { "title": "Security Audits", "description": "Comprehensive system security assessment" },
+        { "title": "Penetration Testing", "description": "Identify vulnerabilities in your systems" },
+        { "title": "Security Monitoring", "description": "24/7 threat detection and response" }
+      ],
+      "process": [
+        { "title": "Assessment", "description": "Initial security evaluation" },
+        { "title": "Planning", "description": "Security strategy development" },
+        { "title": "Implementation", "description": "Security measures deployment" },
+        { "title": "Monitoring", "description": "Continuous security oversight" }
+      ]
     },
     "uiuxdesign": {
       "title": "UI/UX Design",
-      "description": "Create user-friendly and visually appealing websites"
+      "description": "Create user-friendly and visually appealing websites",
+      "features": [
+        { "title": "User Research", "description": "Understanding user needs and behaviors" },
+        { "title": "Wireframing", "description": "Layout and structure planning" },
+        { "title": "Visual Design", "description": "Creating appealing interfaces" }
+      ],
+      "process": [
+        { "title": "Discovery", "description": "Understanding project requirements" },
+        { "title": "Design", "description": "Creating user interfaces" },
+        { "title": "Testing", "description": "User testing and feedback" }
+      ]
     },
     "training": {
       "title": "Training",
-      "description": "FE & BE training for your internal team"
+      "description": "FE & BE training for your internal team",
+      "features": [
+        { "title": "Frontend Development", "description": "Modern web development practices" },
+        { "title": "Backend Development", "description": "Server-side programming skills" },
+        { "title": "DevOps Practices", "description": "CI/CD and deployment workflows" }
+      ],
+      "process": [
+        { "title": "Assessment", "description": "Evaluate current skill levels" },
+        { "title": "Planning", "description": "Customize training program" },
+        { "title": "Execution", "description": "Hands-on training sessions" }
+      ]
     },
     "consulting": {
       "title": "Consulting",
-      "description": "We provide consulting services to help improve your business"
+      "description": "We provide consulting services to help improve your business",
+      "features": [
+        { "title": "Technical Assessment", "description": "Evaluate current systems" },
+        { "title": "Strategy Planning", "description": "Technology roadmap development" },
+        { "title": "Solution Architecture", "description": "Design scalable solutions" }
+      ],
+      "process": [
+        { "title": "Discovery", "description": "Understanding business needs" },
+        { "title": "Analysis", "description": "Detailed system evaluation" },
+        { "title": "Recommendations", "description": "Strategic improvement plan" }
+      ]
     },
     "androidapp": {
       "title": "Android Development",
-      "description": "Custom Android applications for your business needs"
+      "description": "Custom Android applications for your business needs",
+      "features": [
+        { "title": "Native Development", "description": "High-performance Android apps" },
+        { "title": "Cross-platform", "description": "React Native solutions" },
+        { "title": "Play Store", "description": "App store optimization" }
+      ],
+      "process": [
+        { "title": "Planning", "description": "App architecture design" },
+        { "title": "Development", "description": "Agile development process" },
+        { "title": "Testing", "description": "Quality assurance" }
+      ]
     },
     "iosapp": {
       "title": "iOS Development",
-      "description": "Native iOS applications built for performance"
+      "description": "Native iOS applications built for performance",
+      "features": [
+        { "title": "Swift Development", "description": "Modern iOS applications" },
+        { "title": "UI/UX Design", "description": "Apple design guidelines" },
+        { "title": "App Store", "description": "Distribution and updates" }
+      ],
+      "process": [
+        { "title": "Design", "description": "iOS-specific design" },
+        { "title": "Development", "description": "Swift implementation" },
+        { "title": "Deployment", "description": "App Store submission" }
+      ]
     },
     "cloud": {
       "title": "Cloud Services",
-      "description": "AWS, Azure, and Google Cloud solutions and management"
+      "description": "AWS, Azure, and Google Cloud solutions and management",
+      "features": [
+        { "title": "Cloud Migration", "description": "Seamless transition to cloud" },
+        { "title": "Infrastructure Setup", "description": "Scalable cloud architecture" },
+        { "title": "Cost Optimization", "description": "Efficient resource management" }
+      ],
+      "process": [
+        { "title": "Assessment", "description": "Current infrastructure review" },
+        { "title": "Planning", "description": "Migration strategy development" },
+        { "title": "Implementation", "description": "Cloud deployment and setup" }
+      ]
     },
     "devops": {
       "title": "DevOps",
-      "description": "Streamline your development and operations workflow"
+      "description": "Streamline your development and operations workflow",
+      "features": [
+        { "title": "CI/CD Pipeline", "description": "Automated deployment workflows" },
+        { "title": "Infrastructure as Code", "description": "Automated provisioning" },
+        { "title": "Monitoring", "description": "Performance and health tracking" }
+      ],
+      "process": [
+        { "title": "Assessment", "description": "Current workflow analysis" },
+        { "title": "Implementation", "description": "DevOps practices setup" },
+        { "title": "Optimization", "description": "Continuous improvement" }
+      ]
     },
     "ai": {
       "title": "AI Solutions",
-      "description": "Artificial Intelligence and Machine Learning integration"
+      "description": "Artificial Intelligence and Machine Learning integration",
+      "features": [
+        { "title": "Machine Learning", "description": "Custom ML model development" },
+        { "title": "Data Analytics", "description": "Advanced data insights" },
+        { "title": "AI Integration", "description": "Smart automation solutions" }
+      ],
+      "process": [
+        { "title": "Data Assessment", "description": "Evaluate data requirements" },
+        { "title": "Model Development", "description": "AI/ML model creation" },
+        { "title": "Integration", "description": "System implementation" }
+      ]
     },
     "hero": {
       "badge": "SERVICES",
@@ -248,6 +339,18 @@
       "label": "TEAM MEMBERS",
       "title": "We're a results driven team",
       "description": "With a passion for innovation and a dedication to excellence, we bring diverse expertise to every project we undertake."
+    }
+  },
+  "home": {
+    "title": "Welcome",
+    "description": "Tech Lead Portal",
+    "hero": {
+      "title": "Building Tomorrow's Technology Leaders",
+      "description": "We help you develop the technical leadership skills needed to succeed in the ever-evolving tech industry"
+    },
+    "features": {
+      "title": "Key Features",
+      "description": "Various tools and resources to help you grow"
     }
   }
 } 

@@ -25,7 +25,7 @@ export default async function ServicesPage({
           {getNavigationItems(locale).services.map((service) => (
             <a
               key={service.slug}
-              href={`/${locale}${service.href}`}
+              href='#' //{`/${locale}${service.href}`}
               className="p-6 rounded-lg border hover:bg-slate-800 transition-colors"
             >
               <h2 className="text-xl font-bold text-slate-200 mb-2">

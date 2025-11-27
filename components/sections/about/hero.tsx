@@ -60,7 +60,7 @@ export function AboutHero({ content }: AboutHeroProps) {
         </div>
       </section>
 
-      <section className="relative bg-card px-4 md:px-20">
+      {/* <section className="relative bg-card px-4 md:px-20">
         <div className="py-24">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-8">
             <motion.div
@@ -102,7 +102,7 @@ export function AboutHero({ content }: AboutHeroProps) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

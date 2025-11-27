@@ -26,15 +26,15 @@ export default function Hero() {
 
 
   return (
-    <Section className="fade-bottom relative min-h-screen overflow-hidden pb-0 sm:pb-0 md:pb-0">
-      <div className="absolute inset-0 h-full w-screen bg-background/90 opacity-10 ">
+    <Section className="flex items-center justify-center fade-bottom h-screen relative h-screen overflow-hidden pb-0 sm:pb-0 md:pb-0">
+      <div className="absolute inset-0 h-full w-screen bg-background/90 opacity-60 ">
         <Spline
           scene="https://prod.spline.design/HPZihHdNfp-iLgPy/scene.splinecode" 
           className="absolute top-0 inset-0 h-1/2 border w-full"
         />
       </div>
 
-      <div className="relative z-10 flex min-h-screen">
+      <div className="relative z-10 ">
         <div className="container mx-auto flex max-w-container flex-col gap-12 pt-24 sm:gap-24">
           <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
             <Badge variant="outline" className="animate-appear">
@@ -51,7 +51,7 @@ export default function Hero() {
                 {t('title')}
               </h1>
             </div>
-            <p className="text-md relative z-10 max-w-[550px] animate-appear font-medium text-muted-foreground opacity-0 delay-100 sm:text-sm">
+            <p className="md:text-2xl  relative z-10 max-w-[550px] animate-appear text-muted-foreground opacity-0 delay-100 sm:text-sm">
               {t('description')}
             </p>
             <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300">

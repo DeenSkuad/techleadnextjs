@@ -1,3 +1,5 @@
+// components/ui/navigation.tsx
+
 "use client";
 
 import * as React from "react";
@@ -29,6 +31,7 @@ export default function Navigation() {
   const scrollToSection = useScrollToSection();
   const params = useParams();
   const locale = (params?.locale as string) || 'en';
+
   const navItems: NavigationItems = getNavigationItems(locale);
 
   return (
@@ -90,21 +93,12 @@ export default function Navigation() {
 
         {navItems.mainNav.map((item) => (
           <NavigationMenuItem key={item.title}>
-            {item.isScroll ? (
-              <NavigationMenuLink 
-                className={navigationMenuTriggerStyle()}
-                onClick={() => item.sectionId && scrollToSection(item.sectionId)}
-              >
-                {t(`navigation.${item.title}`)}
-              </NavigationMenuLink>
-            ) : (
-              <Link 
-                href={item.href || '/'} 
-                className={navigationMenuTriggerStyle()}
-              >
-                {t(`navigation.${item.title}`)}
-              </Link>
-            )}
+            <Link 
+              href={item.href || '/'} 
+              className={navigationMenuTriggerStyle()}
+            >
+              {t(item.title)}
+            </Link>
           </NavigationMenuItem>
         ))}
       </NavigationMenuList>

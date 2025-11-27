@@ -11,7 +11,7 @@ export default function LanguageSwitcher() {
 
   const switchLocale = () => {
     const newLocale = locale === 'en' ? 'ms' : 'en';
-    const currentPath = pathname.replace(`/${locale}`, '');
+    const currentPath = pathname ? pathname.replace(`/${locale}`, '') : '';
     router.push(`/${newLocale}${currentPath}`);
   };
 

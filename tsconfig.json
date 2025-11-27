@@ -18,9 +18,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
-      "@/i18n/*": ["./lib/i18n/*"]
-    }
+      "@/*": ["./*"]
+    },
+    "types": ["next-intl"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]

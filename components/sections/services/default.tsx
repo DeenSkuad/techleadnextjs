@@ -13,7 +13,7 @@ export default function Services() {
   const t = useTranslations('services');
 
   return (
-    <section>
+    <section className="hidden md:block h-screen">
       <div className="relative flex h-96 w-full flex-col items-center justify-center space-y-4 overflow-hidden px-4">
         <h2 className="text-3xl font-bold text-slate-200 mb-8">{t('title')}</h2>
         <div className="mx-auto w-full max-w-3xl">

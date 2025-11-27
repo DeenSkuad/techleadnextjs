@@ -17,6 +17,7 @@ export const HeroParallax = ({
     title: string;
     link: string;
     thumbnail: string;
+    description: string;
   }[];
 }) => {
   const firstRow = works.slice(0, 5);
@@ -32,27 +33,27 @@ export const HeroParallax = ({
 
   const translateX = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, 1000]),
-    springConfig,
+    springConfig
   );
   const translateXReverse = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, -1000]),
-    springConfig,
+    springConfig
   );
   const rotateX = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [15, 0]),
-    springConfig,
+    springConfig
   );
   const opacity = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
-    springConfig,
+    springConfig
   );
   const rotateZ = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [20, 0]),
-    springConfig,
+    springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
-    springConfig,
+    useTransform(scrollYProgress, [0, 0.4], [-700, 500]),
+    springConfig
   );
   return (
     <div
@@ -103,16 +104,20 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="relative left-0 top-0 mx-auto w-full max-w-7xl px-4 py-20 md:py-40">
-      <h1 className="text-2xl font-bold dark:text-white md:text-7xl">
-        The Ultimate <br /> development studio
-      </h1>
-      <p className="mt-8 max-w-2xl text-base dark:text-neutral-200 md:text-xl">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
-      </p>
-    </div>
+    <motion.div
+    
+    >
+      <div className="left-0 top-0 mx-auto w-full max-w-7xl px-4 py-10 md:py-40">
+        <h1 className="text-2xl font-bold dark:text-white md:text-7xl">
+          The Ultimate <br /> development studio
+        </h1>
+        <p className="mt-8 max-w-2xl text-base dark:text-neutral-200 md:text-xl">
+          We build beautiful products with the latest technologies and
+          frameworks. We are a team of passionate developers and designers that
+          love to build amazing products.
+        </p>
+      </div>
+    </motion.div>
   );
 };
 
@@ -123,37 +128,49 @@ export const ProductCard = ({
   product: {
     title: string;
     link: string;
+    description: string;
     thumbnail: string;
   };
   translate: MotionValue<number>;
 }) => {
   return (
     <motion.div
-      style={{
-        x: translate,
-      }}
-      whileHover={{
-        y: -20,
-      }}
+      style={{ x: translate }}
+      whileHover={{ y: -20 }}
       key={product.title}
-      className="group/product relative h-96 w-[30rem] flex-shrink-0"
+      className="group/product border border-white/10 relative flex-shrink-0 w-[90vw] sm:w-[22rem] md:w-1/2 h-1/2 rounded-xl overflow-hidden shadow-md bg-neutral-900"
     >
-      <Link
-        href={product.link}
-        className="block group-hover/product:shadow-2xl"
-      >
+      <Link href={product.link} className="block h-full w-full ">
         <Image
           src={product.thumbnail}
-          height="600"
-          width="600"
-          className="absolute inset-0 h-full w-full object-cover object-left-top"
+          height={600}
+          width={600}
           alt={product.title}
+          className=" h-full w-full object-contain transition-transform duration-500 group-hover/product:scale-105"
         />
+
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent transition-opacity duration-300"></div>
+
+        {/* Content Overlay */}
+        {/* App Store Icon (optional) */}
+        {/* <div className="absolute bottom-4 border flex gap-4 left-4 text-white opacity-20 hover:opacity-100 text-xl">
+          <Image
+            src="/images/apple.svg"
+            alt="App Store"
+            width={22}
+            height={22}
+            className="transition-opacity duration-300 group-hover/product:opacity-100"
+          />
+          <Image
+            src="/images/google-play.svg"
+            alt="App Store"
+            width={22}
+            height={22}
+            className="transition-opacity duration-300 group-hover/product:opacity-100"
+          />
+        </div> */}
       </Link>
-      <div className="pointer-events-none absolute inset-0 h-full w-full bg-black opacity-0 group-hover/product:opacity-80"></div>
-      <h2 className="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">
-        {product.title}
-      </h2>
     </motion.div>
   );
 };

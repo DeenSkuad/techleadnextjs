@@ -1,0 +1,30 @@
+{
+  "navigation": {
+    "Training": "Latihan",
+    "About Us": "Tentang Kami",
+    "Our Work": "Kerja Kami",
+    "services": "Perkhidmatan",
+    "servicesDescription": "Terokai pelbagai perkhidmatan kami.",
+    "products": "Produk"
+  },
+  "services": {
+    "slug1": {
+      "title": "Perkhidmatan 1",
+      "description": "Penerangan untuk Perkhidmatan 1"
+    },
+    "slug2": {
+      "title": "Perkhidmatan 2",
+      "description": "Penerangan untuk Perkhidmatan 2"
+    }
+  },
+  "products": {
+    "slug1": {
+      "title": "Produk 1",
+      "description": "Penerangan untuk Produk 1"
+    },
+    "slug2": {
+      "title": "Produk 2",
+      "description": "Penerangan untuk Produk 2"
+    }
+  }
+}
