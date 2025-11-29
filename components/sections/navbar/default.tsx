@@ -22,11 +22,13 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Navbar() {
   const params = useParams();
   const locale = params?.locale || "en"; // Default to "en" if locale is undefined
   const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const t = useTranslations("navigation");
 
   const handleMenuItemClick = () => {
     setIsSheetOpen(false);
@@ -67,7 +69,7 @@ export default function Navbar() {
                 target="_blank"
               >
                 <FaWhatsapp className="ml-2" />
-                Talk To Us
+                {t("talkToUs")}
               </a>
             </Button>
             {/* Mobile nav */}

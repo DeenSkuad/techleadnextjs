@@ -11,6 +11,59 @@
     "training": "Latihan",
     "servicesDescription": "Terokai pelbagai perkhidmatan kami"
   },
+  "heroParallax": {
+    "badge": "Kerja Kami",
+    "title": "Pengalaman Digital",
+    "titleLine2": "Direka Strategik Untuk Prestasi",
+    "description": "Kejayaan kami diukur melalui hasil yang kami capai untuk klien. Setiap projek direka dengan ketepatan, inovasi, dan komitmen kepada kecemerlangan."
+  },
+  "About Us": "Tentang Kami",
+  "Our Work": "Kerja Kami",
+  "Training": "Latihan",
+  "cta": {
+    "title": "Ingin Mengembangkan Perniagaan Anda?",
+    "subtitle": "Jom mulakan sesuatu yang hebat!",
+    "hireUs": "Hubungi Kami"
+  },
+  "logos": {
+    "title": "Kami telah bekerjasama dengan lebih 200 klien yang berpuas hati"
+  },
+  "clients": {
+    "title": "Klien Kami",
+    "description": "Kami semua berkongsi matlamat yang sama: menggabungkan kuasa kreativiti dengan kekuatan kod untuk membina pengalaman digital yang boleh mengubah kehidupan."
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Kami sedia membantu",
+    "name": "Nama",
+    "namePlaceholder": "Nama Anda",
+    "email": "Emel",
+    "emailPlaceholder": "Emel Anda",
+    "phone": "Telefon",
+    "phonePlaceholder": "Telefon Anda",
+    "interests": "Minat",
+    "interestsLabel": "Pilih sekurang-kurangnya satu minat",
+    "message": "Mesej",
+    "messagePlaceholder": "Mesej...",
+    "submit": "Hantar",
+    "sending": "Menghantar...",
+    "success": "Mesej berjaya dihantar!",
+    "error": "Gagal menghantar mesej. Sila cuba lagi.",
+    "validation": {
+      "nameRequired": "Nama diperlukan",
+      "emailInvalid": "Alamat emel tidak sah",
+      "phoneRequired": "Nombor telefon yang sah diperlukan",
+      "interestRequired": "Pilih sekurang-kurangnya satu minat",
+      "messageMin": "Mesej mesti sekurang-kurangnya 10 aksara"
+    },
+    "interestOptions": {
+      "web": "Web",
+      "mobileApp": "Aplikasi Mudah Alih",
+      "iot": "IoT",
+      "maintenance": "Penyelenggaraan",
+      "other": "Lain-lain"
+    }
+  },
   "hero": {
     "badge": "Tersedia untuk projek baru",
     "subtitle": "Rakan kongsi anda dalam",
@@ -216,12 +269,14 @@
     "hrms": {
       "title": "HRMS",
       "description": "Urus pekerja anda dan tingkatkan perniagaan anda.",
-      "tagline": "Permudahkan Operasi HR Anda"
+      "tagline": "Permudahkan Operasi HR Anda",
+      "heroImageAlt": "Sistem Pengurusan HR"
     },
     "ecommerce": {
       "title": "e-Dagang",
       "description": "Platform e-dagang berbilang vendor untuk perniagaan anda. segerak dengan mana-mana pasaran.",
-      "tagline": "Penyelesaian Peruncitan Bersepadu"
+      "tagline": "Penyelesaian Peruncitan Bersepadu",
+      "heroImageAlt": "Platform E-Dagang"
     },
     "elearning": {
       "title": "e-Pembelajaran",
@@ -254,6 +309,7 @@
         "title": "Sistem Pengurusan HR",
         "tagline": "Permudahkan Operasi HR Anda",
         "description": "Penyelesaian HR lengkap dengan gaji, pengurusan cuti, dan penjejakan prestasi.",
+        "heroImageAlt": "Sistem Pengurusan HR",
         "features": [
           { "title": "Pengurusan Pekerja", "description": "Data pekerja komprehensif" },
           { "title": "Sistem Gaji", "description": "Pemprosesan gaji automatik" },
@@ -328,5 +384,520 @@
       "title": "Ciri-ciri Utama",
       "description": "Pelbagai alat dan sumber untuk membantu anda berkembang"
     }
+  },
+  "homeProducts": {
+    "sectionLabel": "Produk Kami",
+    "sectionTitle": "Penyelesaian Digital Komprehensif",
+    "sectionSubtitle": "Tiga sistem utama untuk transformasi digital organisasi anda",
+    "learnMore": "Ketahui Lebih Lanjut",
+    "items": {
+      "asset": {
+        "name": "Sistem Pengurusan Aset",
+        "tagline": "Patuh KEWPA & KEWPS",
+        "description": "Penyelesaian lengkap untuk pengurusan aset kerajaan dan korporat dengan pematuhan penuh kepada standard Malaysia.",
+        "slug": "assetmanagement"
+      },
+      "hrm": {
+        "name": "Sistem Pengurusan HR",
+        "tagline": "Automasi Sumber Manusia",
+        "description": "Urus sumber manusia dengan lebih efisien - dari pengambilan hingga persaraan dalam satu platform.",
+        "slug": "hrm"
+      },
+      "ecommerce": {
+        "name": "Platform E-Commerce",
+        "tagline": "Jualan Online Mudah",
+        "description": "Platform e-dagang lengkap untuk perniagaan anda dengan integrasi pembayaran tempatan.",
+        "slug": "ecommerce"
+      }
+    }
+  },
+  "homeServices": {
+    "sectionLabel": "Perkhidmatan",
+    "sectionTitle": "Latihan & Pembangunan",
+    "sectionSubtitle": "Meningkatkan kecekapan organisasi anda",
+    "items": {
+      "technical": {
+        "title": "Latihan Teknikal",
+        "description": "Latihan hands-on untuk pasukan IT anda",
+        "features": [
+          "Enterprise System Administration",
+          "Database Management & SQL",
+          "Web Development (PHP, Python, JS)",
+          "API & REST Services",
+          "Cloud Computing & DevOps"
+        ]
+      },
+      "toolDev": {
+        "title": "Pembangunan Tool",
+        "description": "Custom tools untuk automasi proses",
+        "features": [
+          "Data Management Tools",
+          "Process Automation",
+          "System Integration",
+          "Reporting & Analytics",
+          "Custom Solutions"
+        ]
+      },
+      "business": {
+        "title": "Proses Bisnes",
+        "description": "Transformasi digital organisasi",
+        "features": [
+          "Digital Transformation",
+          "Project Management (Agile)",
+          "Business Analysis",
+          "Change Management",
+          "Data Analytics"
+        ]
+      }
+    }
+  },
+  "trainingFormats": {
+    "sectionTitle": "Format Latihan Tersedia",
+    "items": {
+      "onsite": {
+        "title": "On-Site",
+        "description": "Di lokasi anda",
+        "icon": "Building2"
+      },
+      "virtual": {
+        "title": "Virtual",
+        "description": "Latihan online",
+        "icon": "Monitor"
+      },
+      "workshop": {
+        "title": "Workshop",
+        "description": "Sesi hands-on",
+        "icon": "Users"
+      },
+      "oneOnOne": {
+        "title": "1-on-1",
+        "description": "Coaching peribadi",
+        "icon": "User"
+      }
+    }
+  },
+  "packages": {
+    "sectionLabel": "Pakej Perkhidmatan",
+    "sectionTitle": "Pilih Pelan Terbaik untuk Anda",
+    "sectionSubtitle": "Pakej fleksibel yang boleh disesuaikan dengan keperluan organisasi",
+    "cta": "Pilih Pakej",
+    "mostPopular": "Paling Popular",
+    "items": {
+      "starter": {
+        "name": "Starter",
+        "price": "30,000",
+        "currency": "RM",
+        "period": "/projek",
+        "description": "Sesuai untuk projek kecil dan sederhana",
+        "features": [
+          "Latihan 20 peserta",
+          "Alat automasi asas",
+          "Sokongan 3 bulan",
+          "Dokumentasi lengkap"
+        ]
+      },
+      "professional": {
+        "name": "Professional",
+        "price": "49,600",
+        "currency": "RM",
+        "period": "/projek",
+        "description": "Pilihan terbaik untuk kebanyakan organisasi",
+        "popular": true,
+        "features": [
+          "Latihan 25 peserta",
+          "Custom tool development",
+          "Integrasi sistem",
+          "Sokongan prioriti 6 bulan",
+          "Coaching hands-on"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "description": "Untuk organisasi besar dengan keperluan khusus",
+        "features": [
+          "Peserta tanpa had",
+          "Enterprise solutions",
+          "Sokongan 24/7",
+          "Consultancy on-site",
+          "SLA guaranteed"
+        ]
+      }
+    }
+  },
+  "portfolio": {
+    "sectionLabel": "Portfolio",
+    "sectionTitle": "Projek Terkini Kami",
+    "sectionSubtitle": "Beberapa projek yang telah kami selesaikan untuk klien kerajaan dan korporat",
+    "viewAll": "Lihat Semua Projek",
+    "items": {
+      "satria": {
+        "name": "SATRIA TD",
+        "client": "Tentera Darat Malaysia",
+        "type": "Sistem Pengurusan & Latihan",
+        "image": "/images/products/Satria_TD_Banner 1.png"
+      },
+      "adims": {
+        "name": "ADiMS",
+        "client": "Pelbagai Agensi",
+        "type": "Sistem Pengurusan Aset",
+        "image": "/images/products/Assets_management.png"
+      },
+      "mhcotryze": {
+        "name": "MH COTRYZE",
+        "client": "Hospital Kerajaan",
+        "type": "Inventory System",
+        "image": "/images/products/mhcotryze_banner 1.png"
+      }
+    }
+  },
+  "testimonials": {
+    "sectionLabel": "Testimoni",
+    "sectionTitle": "Apa Kata Pelanggan Kami",
+    "items": [
+      {
+        "name": "Encik Ahmad Razif",
+        "role": "Pengurus IT, Agensi Kerajaan",
+        "quote": "Bekerja dengan Tech-Lead adalah pengalaman yang sangat baik. Pasukan mereka benar-benar memahami keperluan kami dan menyampaikan penyelesaian yang melebihi jangkaan. Kerjasama sepanjang projek berjalan lancar.",
+        "avatar": "AR"
+      },
+      {
+        "name": "Puan Siti Aminah",
+        "role": "Penyelaras Latihan, Korporat",
+        "quote": "Sesi latihan yang disediakan oleh Tech-Lead sangat komprehensif dan tersusun. Pasukan kami memperoleh kemahiran berharga yang terus kami aplikasikan dalam kerja harian. Sangat disyorkan!",
+        "avatar": "SA"
+      },
+      {
+        "name": "Encik Lee Wei Ming",
+        "role": "Pengarah Operasi, Penjagaan Kesihatan",
+        "quote": "Perisian yang dibangunkan oleh Tech-Lead telah meningkatkan kecekapan operasi kami dengan ketara. Apa yang dahulu mengambil masa berjam-jam kini hanya mengambil beberapa minit. Sokongan berterusan mereka sangat cemerlang.",
+        "avatar": "LW"
+      },
+      {
+        "name": "Puan Nurul Huda",
+        "role": "Pengurus Projek, Sektor Pendidikan",
+        "quote": "Dari konsultasi awal hingga penghantaran akhir, Tech-Lead menunjukkan profesionalisme dan kepakaran. Penyelesaian tersuai yang mereka bina menangani cabaran unik kami dengan sempurna.",
+        "avatar": "NH"
+      },
+      {
+        "name": "Encik Rajesh Kumar",
+        "role": "CTO, Perkhidmatan Kewangan",
+        "quote": "Pasukan pembangunan Tech-Lead menyampaikan penyelesaian yang kukuh dan berskala tepat pada masanya dan dalam bajet. Perhatian mereka terhadap perincian dan komitmen terhadap kualiti sangat mengagumkan.",
+        "avatar": "RK"
+      }
+    ]
+  },
+  "faq": {
+    "sectionLabel": "FAQ",
+    "sectionTitle": "Soalan Lazim",
+    "categories": {
+      "general": "Soalan Umum",
+      "project": "Projek & Pembangunan",
+      "support": "Sokongan"
+    },
+    "general": [
+      {
+        "question": "Bagaimana cara untuk mula menggunakan perkhidmatan pembangunan perisian anda?",
+        "answer": "Mudah sahaja! Hubungi kami melalui laman web atau jadualkan sesi konsultasi. Dalam perbincangan awal, kami akan membincangkan matlamat perniagaan, cabaran, dan visi anda untuk mencipta proposal terperinci yang merangkumi penyelesaian, jangka masa, dan kos."
+      },
+      {
+        "question": "Berapa lama masa yang diperlukan untuk membangunkan perisian tersuai?",
+        "answer": "Jangka masa pembangunan bergantung kepada kerumitan projek, ciri-ciri, dan skop. Secara purata, projek berskala kecil mengambil masa 3-6 bulan, manakala penyelesaian yang lebih kompleks mungkin memerlukan 9-12 bulan atau lebih lama."
+      },
+      {
+        "question": "Berapakah kos pembangunan perisian tersuai?",
+        "answer": "Kos berbeza berdasarkan faktor seperti bilangan ciri, kerumitan reka bentuk, integrasi, dan keperluan penyelenggaraan berterusan. Kami menyediakan anggaran kos terperinci selepas konsultasi awal untuk memastikan ketelusan."
+      },
+      {
+        "question": "Apakah industri yang anda pakar dalam penyelesaian perisian tersuai?",
+        "answer": "Kami pakar dalam beberapa industri termasuk pendidikan, perpustakaan, penjagaan kesihatan, kewangan, runcit, dan logistik. Kepakaran kami membolehkan kami memahami cabaran unik setiap sektor dan menyampaikan penyelesaian yang memenuhi standard industri."
+      },
+      {
+        "question": "Apa yang berlaku jika saya memerlukan perubahan selepas perisian siap?",
+        "answer": "Kami faham keperluan perniagaan sentiasa berubah. Selepas projek selesai, kami menawarkan fleksibiliti untuk penambahbaikan dan pengubahsuaian melalui kontrak sokongan berterusan atau perjanjian perkhidmatan ad hoc. Anda boleh meminta ciri baru, integrasi, atau kemaskini pada bila-bila masa."
+      },
+      {
+        "question": "Adakah perisian saya boleh diintegrasikan dengan sistem dan alat sedia ada?",
+        "answer": "Ya, kami mengutamakan integrasi lancar dengan alat dan sistem sedia ada untuk mengelakkan gangguan. Sama ada CRM, ERP, atau API pihak ketiga, pasukan pembangunan kami memastikan keserasian untuk aliran kerja yang bersepadu."
+      },
+      {
+        "question": "Adakah perisian anda disertakan dengan waranti?",
+        "answer": "Ya, terdapat Tempoh Waranti selama 1 tahun untuk penyelesaian yang dicadangkan, bermula sejurus selepas tarikh User Acceptance Test Sign-Off. Sebarang kecacatan yang disebabkan oleh kesilapan konfigurasi dan pengekodan dalam Tempoh Waranti ini akan diselesaikan secara percuma."
+      }
+    ],
+    "project": [
+      {
+        "question": "Bolehkah saya menjejaki kemajuan projek saya?",
+        "answer": "Ya, ketelusan adalah penting bagi kami. Kami menyediakan kemaskini berkala, laporan kemajuan, dan demo semasa proses pembangunan. Anda juga akan mempunyai akses kepada pengurus projek khusus untuk membincangkan pencapaian dan memberi maklum balas sepanjang projek."
+      },
+      {
+        "question": "Adakah anda menggunakan metodologi Agile dalam proses pembangunan?",
+        "answer": "Ya, kami mengamalkan praktik Agile untuk memastikan fleksibiliti dan kebolehsuaian semasa proses pembangunan. Ini membolehkan kami menyampaikan kemajuan secara berulang dan memasukkan maklum balas anda pada setiap peringkat, memastikan produk akhir selaras dengan visi anda."
+      },
+      {
+        "question": "Bagaimana anda memastikan kualiti perisian?",
+        "answer": "Kami mengikuti proses jaminan kualiti (QA) yang ketat, termasuk ujian automatik, ujian manual, dan semakan kod rakan sejawat. Ini memastikan perisian bebas pepijat, berfungsi optimum, dan memenuhi semua keperluan projek sebelum penghantaran."
+      },
+      {
+        "question": "Apakah itu keluaran kecemasan (emergency releases)?",
+        "answer": "Keluaran Kecemasan adalah apabila kerosakan perisian menghalang sistem beroperasi dengan betul, pembaikan (patch) disediakan sebagai keluaran kecemasan. Ia hanya menangani masalah kritikal berkenaan dan bersifat sementara, digantikan oleh keluaran penyelenggaraan seterusnya."
+      }
+    ],
+    "support": [
+      {
+        "question": "Adakah anda menawarkan penyelenggaraan dan sokongan berterusan untuk perisian?",
+        "answer": "Ya, kami menyediakan perkhidmatan penyelenggaraan komprehensif yang merangkumi pembetulan pepijat, pelaksanaan naik taraf, peningkatan keselamatan, dan penambahbaikan prestasi. Sama ada kemaskini berjadual atau pembetulan kecemasan, kami memastikan perisian anda beroperasi dengan lancar."
+      },
+      {
+        "question": "Bagaimana jika perisian saya memerlukan sokongan kecemasan?",
+        "answer": "Kami menawarkan sokongan kecemasan untuk menangani isu kritikal, memastikan masa henti minimum. Pelanggan boleh menghubungi kami 24/7 melalui email, dan melalui telefon pada hari bekerja. Pasukan kami bertindak balas dengan segera untuk menyelesaikan isu tersebut."
+      }
+    ]
+  },
+  "assetManagement": {
+    "hero": {
+      "badgeLabel": "Pengurusan Aset",
+      "badgeText": "Patuh KEWPA & KEWPS",
+      "title": "Sistem Pengurusan Aset",
+      "subtitle": "Sistem Pengurusan Aset yang patuh sepenuhnya kepada KEWPA & KEWPS. Dari pendaftaran hingga pelupusan, semua dalam satu platform.",
+      "cta": {
+        "primary": "Mohon Demo",
+        "secondary": "Hubungi Kami"
+      },
+      "trusted": "Dipercayai oleh agensi kerajaan"
+    },
+    "problem": {
+      "sectionLabel": "Masalah",
+      "title": "Pengurusan aset secara manual adalah ",
+      "titleHighlight": "rumit.",
+      "items": [
+        {
+          "title": "Data Berselerak",
+          "description": "Rekod aset dalam Excel, dokumen fizikal, dan sistem berbeza menyukarkan pengesanan dan kemas kini.",
+          "icon": "FileText"
+        },
+        {
+          "title": "Proses Manual Lambat",
+          "description": "Audit dan laporan KEWPA/KEWPS mengambil masa berminggu-minggu kerana proses manual yang kompleks.",
+          "icon": "Clock"
+        },
+        {
+          "title": "Risiko Ketidakpatuhan",
+          "description": "Tanpa sistem automatik, sukar memastikan pematuhan 100% kepada prosedur kerajaan.",
+          "icon": "AlertTriangle"
+        }
+      ]
+    },
+    "solution": {
+      "sectionLabel": "Penyelesaian",
+      "title": "Perkasakan Pengurusan Aset",
+      "subtitle": "Sistem yang direka khas untuk memenuhi keperluan agensi kerajaan dan korporat Malaysia.",
+      "features": [
+        {
+          "title": "Pendaftaran Aset Digital",
+          "description": "Daftar dan label aset dengan QR code/barcode. Semua data tersimpan dalam satu platform berpusat.",
+          "icon": "QrCode"
+        },
+        {
+          "title": "Patuh KEWPA & KEWPS",
+          "description": "Sistem direka khas untuk memenuhi semua keperluan pekeliling kerajaan Malaysia.",
+          "icon": "Shield"
+        },
+        {
+          "title": "Laporan Real-time",
+          "description": "Jana laporan automatik untuk audit, pemeriksaan, dan pematuhan dalam beberapa klik.",
+          "icon": "BarChart"
+        },
+        {
+          "title": "Penyelenggaraan Berjadual",
+          "description": "Automasi jadual penyelenggaraan dengan notifikasi dan rekod sejarah lengkap.",
+          "icon": "Calendar"
+        }
+      ]
+    },
+    "howItWorks": {
+      "sectionLabel": "Cara Penggunaan",
+      "title": "Hanya 3 langkah untuk bermula",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Daftar & Setup",
+          "description": "Kami bantu setup sistem dan import data aset sedia ada anda ke dalam platform."
+        },
+        {
+          "number": "2",
+          "title": "Label & Scan",
+          "description": "Jana label QR code dan mula scan untuk pendaftaran aset digital yang pantas."
+        },
+        {
+          "number": "3",
+          "title": "Urus & Lapor",
+          "description": "Urus aset dan jana laporan KEWPA/KEWPS automatik bila-bila masa diperlukan."
+        }
+      ]
+    },
+    "testimonial": {
+      "quote": "Sistem ini memudahkan kerja kami. Laporan KEWPA yang dulu ambil 2 minggu, sekarang siap dalam 1 jam.",
+      "name": "Encik Ahmad Razif",
+      "role": "Pegawai Aset, Tentera Darat"
+    },
+    "features": {
+      "sectionLabel": "Ciri-ciri",
+      "title": "Semua yang anda perlukan",
+      "items": [
+        {
+          "title": "Dashboard Interaktif",
+          "description": "Paparan visual lengkap status aset, nilai, dan penyelenggaraan dalam satu pandangan.",
+          "icon": "LayoutDashboard"
+        },
+        {
+          "title": "Laporan KEWPA",
+          "description": "Jana laporan BR, KEW.PA-2 hingga KEW.PA 17 secara automatik.",
+          "icon": "FileText"
+        },
+        {
+          "title": "Laporan KEWPS",
+          "description": "Sokongan penuh untuk KEW.PS 1 hingga KEW.PS-21.",
+          "icon": "FileCheck"
+        },
+        {
+          "title": "Mobile App",
+          "description": "Akses sistem dari telefon untuk scan dan kemas kini aset di lapangan.",
+          "icon": "Smartphone"
+        }
+      ]
+    },
+    "pricing": {
+      "sectionLabel": "Harga Training",
+      "title": "Pilih pelan yang sesuai untuk anda",
+      "cta": "Tempah Slot",
+      "contact": "Hubungi Kami",
+      "plans": [
+        {
+          "name": "ASAS",
+          "price": "30,000",
+          "currency": "RM",
+          "description": "Sesuai untuk individu dan projek kecil",
+          "features": [
+            "Latihan lanjutan (20 pax)",
+            "Alat automasi mudah",
+            "Sokongan asas",
+            "Sokongan 3 bulan",
+            "Analitik standard"
+          ]
+        },
+        {
+          "name": "PRO",
+          "price": "49,600",
+          "currency": "RM",
+          "popular": true,
+          "description": "Sesuai untuk perniagaan dan pasukan yang berkembang",
+          "features": [
+            "Latihan lanjutan (25 pax)",
+            "Pelbagai Pembangunan tool",
+            "Sokongan keutamaan",
+            "Integrasi sistem",
+            "Sokongan keutamaan 6 bulan",
+            "Bimbingan secara langsung"
+          ]
+        },
+        {
+          "name": "ENTERPRISE",
+          "price": "Custom",
+          "description": "Untuk operasi berskala besar dan pengguna volum tinggi",
+          "features": [
+            "Peserta tanpa had",
+            "Penyelesaian enterprise",
+            "Sokongan premium 24/7",
+            "Konsultansi di lokasi",
+            "AI-Powered"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "sectionLabel": "FAQ",
+      "sectionTitle": "Soalan Lazim",
+      "items": [
+        {
+          "question": "Apakah Sistem Pengurusan Aset Tech-Lead?",
+          "answer": "Tech-Lead menyediakan sistem pengurusan aset yang patuh sepenuhnya kepada KEWPA & KEWPS untuk agensi kerajaan dan korporat Malaysia. Sistem ini membantu menguruskan pendaftaran, penyelenggaraan, pelupusan, dan pelaporan aset secara digital."
+        },
+        {
+          "question": "Bagaimana cara untuk mula menggunakan sistem ini?",
+          "answer": "Anda boleh menghubungi kami melalui borang demo atau WhatsApp untuk mendapatkan demonstrasi sistem secara percuma. Kami akan berbincang keperluan anda dan menyediakan akses percubaan 7 hari."
+        },
+        {
+          "question": "Adakah sistem ini menyokong pengimbasan QR Code & Barcode?",
+          "answer": "Ya, sistem kami menyokong sepenuhnya pengimbasan QR Code dan Barcode untuk pendaftaran aset pantas, pengesanan lokasi, dan audit inventori. Anda boleh mengimbas menggunakan telefon bimbit atau scanner khusus."
+        },
+        {
+          "question": "Bolehkah sistem ini diakses melalui telefon bimbit?",
+          "answer": "Ya, sistem kami mempunyai aplikasi mudah alih yang boleh dimuat turun untuk Android dan iOS. Pengguna boleh mengakses, mengimbas, dan mengemaskini data aset dari mana-mana sahaja."
+        },
+        {
+          "question": "Bagaimana dengan keselamatan data?",
+          "answer": "Data anda disimpan dengan selamat menggunakan enkripsi SSL/TLS. Sistem kami mematuhi piawaian keselamatan data kerajaan dan menyediakan backup automatik serta kawalan akses berperingkat."
+        },
+        {
+          "question": "Apakah jenis sokongan teknikal yang disediakan?",
+          "answer": "Kami menyediakan sokongan teknikal melalui telefon, email, WhatsApp, dan khidmat on-site untuk pakej Enterprise. Pasukan sokongan kami tersedia pada waktu pejabat untuk membantu sebarang isu."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Mula urus aset anda hari ini",
+      "subtitle": "Cuba percuma selama 7 hari. Tiada kad kredit diperlukan.",
+      "primary": "Mula Percuma",
+      "secondary": "Hubungi Kami"
+    },
+    "testimonialsMarquee": {
+      "sectionLabel": "Testimoni",
+      "title": "Apa kata pelanggan kami",
+      "items": [
+        {
+          "name": "Alex Rivera",
+          "role": "CTO di InnovateTech",
+          "quote": "Analitik berdasarkan AI daripada #QuantumInsights telah merevolusikan kitaran pembangunan produk kami. Wawasan kini lebih tepat dan pantas.",
+          "avatar": "AR"
+        },
+        {
+          "name": "Samantha Lee",
+          "role": "Pengarah Pemasaran di NextGen Solutions",
+          "quote": "Melaksanakan model ramalan pelanggan #AIStream telah meningkatkan strategi sasaran kami secara drastik. Kadar penukaran meningkat 50%!",
+          "avatar": "SL"
+        },
+        {
+          "name": "Raj Patel",
+          "role": "Pengasas & CEO di StartUp Grid",
+          "quote": "Sebagai startup, kami perlu bergerak pantas. Pembantu pengekodan automatik #CodeAI membantu kami melakukannya. Kelajuan pembangunan kami berganda.",
+          "avatar": "RP"
+        },
+        {
+          "name": "Emily Chen",
+          "role": "Pengurus Produk di Digital Wave",
+          "quote": "Sintesis suara berdasarkan AI #VoiceGen menjadikan penciptaan produk global lebih mudah. Penyetempatan kini lancar dan cekap.",
+          "avatar": "EC"
+        },
+        {
+          "name": "Michael Brown",
+          "role": "Saintis Data di FinTech Innovations",
+          "quote": "Menggunakan AI #DataCrunch untuk model kewangan kami memberi kelebihan dalam ketepatan ramalan. Strategi pelaburan kami kini dikuasakan analitik data masa nyata.",
+          "avatar": "MB"
+        },
+        {
+          "name": "Linda Wu",
+          "role": "VP Operasi di LogiChain Solutions",
+          "quote": "Alat pengoptimuman rantaian bekalan #LogiTech telah mengurangkan kos operasi kami secara drastik. Kecekapan dan ketepatan dalam logistik tidak pernah lebih baik.",
+          "avatar": "LW"
+        }
+      ]
+    },
+    "howItWorksTitle": "Hanya <span class=\"text-red-500\">3 langkah</span> untuk bermula",
+    "singleTestimonial": {
+      "sectionLabel": "Testimoni",
+      "title": "kata pelanggan kami"
+    },
+    "stillHaveQuestions": "Masih ada soalan? Emel kami di"
   }
 } 

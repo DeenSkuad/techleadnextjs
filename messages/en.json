@@ -11,6 +11,59 @@
     "training": "Training",
     "servicesDescription": "Explore our comprehensive range of services"
   },
+  "heroParallax": {
+    "badge": "Our Work",
+    "title": "Digital Experiences",
+    "titleLine2": "Strategically Engineered To Perform",
+    "description": "We measure our success by the results we drive for our clients. Every project is crafted with precision, innovation, and a commitment to excellence."
+  },
+  "About Us": "About Us",
+  "Our Work": "Our Work",
+  "Training": "Training",
+  "cta": {
+    "title": "Looking To Expand Your Business?",
+    "subtitle": "Let's start making something awesome!",
+    "hireUs": "Hire Us"
+  },
+  "logos": {
+    "title": "We have worked with over 200 happy clients"
+  },
+  "clients": {
+    "title": "Our Clients",
+    "description": "We all share a common goal: combining the power of creativity with the strength of code to build digital experiences that can change people's lives."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help",
+    "name": "Name",
+    "namePlaceholder": "Your Name",
+    "email": "Email",
+    "emailPlaceholder": "Your Email",
+    "phone": "Phone",
+    "phonePlaceholder": "Your Phone",
+    "interests": "Interests",
+    "interestsLabel": "Select at least one interest",
+    "message": "Message",
+    "messagePlaceholder": "Message...",
+    "submit": "Submit",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again.",
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailInvalid": "Invalid email address",
+      "phoneRequired": "Valid phone number required",
+      "interestRequired": "Select at least one interest",
+      "messageMin": "Message must be at least 10 characters"
+    },
+    "interestOptions": {
+      "web": "Web",
+      "mobileApp": "Mobile App",
+      "iot": "IoT",
+      "maintenance": "Maintenance",
+      "other": "Other"
+    }
+  },
   "hero": {
     "badge": "Available for new project",
     "subtitle": "Your trusted partner in",
@@ -352,5 +405,520 @@
       "title": "Key Features",
       "description": "Various tools and resources to help you grow"
     }
+  },
+  "homeProducts": {
+    "sectionLabel": "Our Products",
+    "sectionTitle": "Comprehensive Digital Solutions",
+    "sectionSubtitle": "Three core systems for your organization's digital transformation",
+    "learnMore": "Learn More",
+    "items": {
+      "asset": {
+        "name": "Asset Management System",
+        "tagline": "KEWPA & KEWPS Compliant",
+        "description": "Complete solution for government and corporate asset management with full compliance to Malaysian standards.",
+        "slug": "assetmanagement"
+      },
+      "hrm": {
+        "name": "HR Management System",
+        "tagline": "Human Resource Automation",
+        "description": "Manage human resources more efficiently - from recruitment to retirement in one platform.",
+        "slug": "hrm"
+      },
+      "ecommerce": {
+        "name": "E-Commerce Platform",
+        "tagline": "Easy Online Sales",
+        "description": "Complete e-commerce platform for your business with local payment integration.",
+        "slug": "ecommerce"
+      }
+    }
+  },
+  "homeServices": {
+    "sectionLabel": "Services",
+    "sectionTitle": "Training & Development",
+    "sectionSubtitle": "Enhancing your organization's efficiency",
+    "items": {
+      "technical": {
+        "title": "Technical Training",
+        "description": "Hands-on training for your IT team",
+        "features": [
+          "Enterprise System Administration",
+          "Database Management & SQL",
+          "Web Development (PHP, Python, JS)",
+          "API & REST Services",
+          "Cloud Computing & DevOps"
+        ]
+      },
+      "toolDev": {
+        "title": "Tool Development",
+        "description": "Custom tools for process automation",
+        "features": [
+          "Data Management Tools",
+          "Process Automation",
+          "System Integration",
+          "Reporting & Analytics",
+          "Custom Solutions"
+        ]
+      },
+      "business": {
+        "title": "Business Process",
+        "description": "Digital transformation for organizations",
+        "features": [
+          "Digital Transformation",
+          "Project Management (Agile)",
+          "Business Analysis",
+          "Change Management",
+          "Data Analytics"
+        ]
+      }
+    }
+  },
+  "trainingFormats": {
+    "sectionTitle": "Available Training Formats",
+    "items": {
+      "onsite": {
+        "title": "On-Site",
+        "description": "At your location",
+        "icon": "Building2"
+      },
+      "virtual": {
+        "title": "Virtual",
+        "description": "Online training",
+        "icon": "Monitor"
+      },
+      "workshop": {
+        "title": "Workshop",
+        "description": "Hands-on sessions",
+        "icon": "Users"
+      },
+      "oneOnOne": {
+        "title": "1-on-1",
+        "description": "Personal coaching",
+        "icon": "User"
+      }
+    }
+  },
+  "packages": {
+    "sectionLabel": "Service Packages",
+    "sectionTitle": "Choose the Best Plan for You",
+    "sectionSubtitle": "Flexible packages that can be customized to your organization's needs",
+    "cta": "Choose Package",
+    "mostPopular": "Most Popular",
+    "items": {
+      "starter": {
+        "name": "Starter",
+        "price": "30,000",
+        "currency": "RM",
+        "period": "/project",
+        "description": "Suitable for small and medium projects",
+        "features": [
+          "Training for 20 participants",
+          "Basic automation tools",
+          "3-month support",
+          "Complete documentation"
+        ]
+      },
+      "professional": {
+        "name": "Professional",
+        "price": "49,600",
+        "currency": "RM",
+        "period": "/project",
+        "description": "Best choice for most organizations",
+        "popular": true,
+        "features": [
+          "Training for 25 participants",
+          "Custom tool development",
+          "System integration",
+          "6-month priority support",
+          "Hands-on coaching"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "description": "For large organizations with specific needs",
+        "features": [
+          "Unlimited participants",
+          "Enterprise solutions",
+          "24/7 Support",
+          "On-site consultancy",
+          "SLA guaranteed"
+        ]
+      }
+    }
+  },
+  "portfolio": {
+    "sectionLabel": "Portfolio",
+    "sectionTitle": "Our Recent Projects",
+    "sectionSubtitle": "Some projects we have completed for government and corporate clients",
+    "viewAll": "View All Projects",
+    "items": {
+      "satria": {
+        "name": "SATRIA TD",
+        "client": "Malaysian Army",
+        "type": "Management & Training System",
+        "image": "/images/products/Satria_TD_Banner 1.png"
+      },
+      "adims": {
+        "name": "ADiMS",
+        "client": "Various Agencies",
+        "type": "Asset Management System",
+        "image": "/images/products/Assets_management.png"
+      },
+      "mhcotryze": {
+        "name": "MH COTRYZE",
+        "client": "Government Hospital",
+        "type": "Inventory System",
+        "image": "/images/products/mhcotryze_banner 1.png"
+      }
+    }
+  },
+  "testimonials": {
+    "sectionLabel": "Testimonials",
+    "sectionTitle": "What Our Customers Say",
+    "items": [
+      {
+        "name": "Mr. Ahmad Razif",
+        "role": "IT Manager, Government Agency",
+        "quote": "Working with Tech-Lead has been an excellent experience. Their team truly understands our needs and delivers solutions that exceed expectations. The collaboration throughout the project was seamless.",
+        "avatar": "AR"
+      },
+      {
+        "name": "Ms. Siti Aminah",
+        "role": "Training Coordinator, Corporate",
+        "quote": "The training sessions provided by Tech-Lead were comprehensive and well-structured. Our team gained valuable skills that we immediately applied to our daily work. Highly recommended!",
+        "avatar": "SA"
+      },
+      {
+        "name": "Mr. Lee Wei Ming",
+        "role": "Operations Director, Healthcare",
+        "quote": "The software developed by Tech-Lead has significantly improved our operational efficiency. What used to take hours now takes minutes. Their ongoing support is exceptional.",
+        "avatar": "LW"
+      },
+      {
+        "name": "Ms. Nurul Huda",
+        "role": "Project Manager, Education Sector",
+        "quote": "From initial consultation to final delivery, Tech-Lead demonstrated professionalism and expertise. The custom solution they built perfectly addresses our unique challenges.",
+        "avatar": "NH"
+      },
+      {
+        "name": "Mr. Rajesh Kumar",
+        "role": "CTO, Financial Services",
+        "quote": "Tech-Lead's development team delivered a robust and scalable solution on time and within budget. Their attention to detail and commitment to quality is impressive.",
+        "avatar": "RK"
+      }
+    ]
+  },
+  "faq": {
+    "sectionLabel": "FAQ",
+    "sectionTitle": "Frequently Asked Questions",
+    "categories": {
+      "general": "General Questions",
+      "project": "Project & Development",
+      "support": "Support"
+    },
+    "general": [
+      {
+        "question": "How do I get started with your software development services?",
+        "answer": "Getting started is easy! Contact us through our website or schedule a consultation. During the initial meeting, we'll discuss your business goals, challenges, and vision to create a detailed proposal outlining the solution, timeline, and costs."
+      },
+      {
+        "question": "How long does it take to develop custom software?",
+        "answer": "The development timeline depends on the project's complexity, features, and scope. On average, a small-scale project can take 3-6 months, while more complex solutions may require 9-12 months or longer."
+      },
+      {
+        "question": "How much does custom software development cost?",
+        "answer": "The cost varies based on factors like the number of features, design complexity, integrations, and ongoing maintenance needs. We provide detailed cost estimates after the initial consultation, ensuring transparency."
+      },
+      {
+        "question": "What industries do you specialize in for custom software solutions?",
+        "answer": "We specialize in several industries, including education, libraries, healthcare, finance, retail, and logistics. Our expertise allows us to understand the unique challenges of each sector and deliver tailored solutions that meet industry standards."
+      },
+      {
+        "question": "What happens if I need changes after the software is completed?",
+        "answer": "We understand that business needs evolve. After project completion, we offer flexibility for future enhancements and modifications through ongoing support contracts or ad hoc service agreements. You can request new features, integrations, or updates anytime."
+      },
+      {
+        "question": "Will my software integrate with existing systems and tools?",
+        "answer": "Yes, we prioritize seamless integration with your existing tools and systems to avoid disruptions. Whether it's a CRM, ERP, or third-party API, our development team ensures compatibility for a unified workflow."
+      },
+      {
+        "question": "Does your software come with warranty?",
+        "answer": "Yes, there is a Warranty Period of 1 year for the proposed solution, which will commence immediately after the date of User Acceptance Test Sign-Off. Any defects caused by misconfiguration and coding errors during this Warranty Period shall be resolved free of charge."
+      }
+    ],
+    "project": [
+      {
+        "question": "Can I track the progress of my project?",
+        "answer": "Yes, transparency is essential to us. We provide regular updates, progress reports, and demos during the development process. You'll also have access to a dedicated project manager to discuss milestones and give feedback throughout the project."
+      },
+      {
+        "question": "Do you use Agile methodology in your development process?",
+        "answer": "Yes, we follow Agile practices to ensure flexibility and adaptability during the development process. This allows us to deliver iterative progress and incorporate your feedback at every stage, ensuring the final product aligns with your vision."
+      },
+      {
+        "question": "How do you ensure the quality of the software?",
+        "answer": "We follow a rigorous quality assurance (QA) process, including automated testing, manual testing, and peer code reviews. This ensures the software is free of bugs, performs optimally, and meets all project requirements before delivery."
+      },
+      {
+        "question": "What are emergency releases?",
+        "answer": "Emergency Release is when a software fault prevents the system from operating correctly, a fix (patch) is made available as an emergency release. It addresses only the critical problem in question and is temporary in nature, replaced by the next maintenance release."
+      }
+    ],
+    "support": [
+      {
+        "question": "Do you offer ongoing maintenance and support for the software?",
+        "answer": "Yes, we provide comprehensive maintenance services that include fixing bugs, implementing upgrades, enhancing security, and improving performance. Whether it's scheduled updates or emergency fixes, we ensure your software operates smoothly."
+      },
+      {
+        "question": "What if my software needs emergency support?",
+        "answer": "We offer emergency support to address critical issues, ensuring minimal downtime. Clients can contact us 24/7 via email, and over the phone during working days. Our team responds promptly to resolve the issue."
+      }
+    ]
+  },
+  "assetManagement": {
+    "hero": {
+      "badgeLabel": "Asset Management",
+      "badgeText": "KEWPA & KEWPS Compliant",
+      "title": "Asset Management System",
+      "subtitle": "Asset Management System fully compliant with KEWPA & KEWPS. From registration to disposal, all in one platform.",
+      "cta": {
+        "primary": "Request Demo",
+        "secondary": "Contact Us"
+      },
+      "trusted": "Trusted by government agencies"
+    },
+    "problem": {
+      "sectionLabel": "Problem",
+      "title": "Manual asset management is ",
+      "titleHighlight": "complicated.",
+      "items": [
+        {
+          "title": "Scattered Data",
+          "description": "Asset records in Excel, physical documents, and different systems make tracking and updating difficult.",
+          "icon": "FileText"
+        },
+        {
+          "title": "Slow Manual Process",
+          "description": "KEWPA/KEWPS audits and reports take weeks due to complex manual processes.",
+          "icon": "Clock"
+        },
+        {
+          "title": "Non-Compliance Risk",
+          "description": "Without automated systems, it's difficult to ensure 100% compliance with government procedures.",
+          "icon": "AlertTriangle"
+        }
+      ]
+    },
+    "solution": {
+      "sectionLabel": "Solution",
+      "title": "Empower Asset Management",
+      "subtitle": "System designed specifically to meet the needs of Malaysian government agencies and corporations.",
+      "features": [
+        {
+          "title": "Digital Asset Registration",
+          "description": "Register and label assets with QR code/barcode. All data stored in one centralized platform.",
+          "icon": "QrCode"
+        },
+        {
+          "title": "KEWPA & KEWPS Compliant",
+          "description": "System designed to meet all Malaysian government circular requirements.",
+          "icon": "Shield"
+        },
+        {
+          "title": "Real-time Reports",
+          "description": "Generate automatic reports for audits, inspections, and compliance in a few clicks.",
+          "icon": "BarChart"
+        },
+        {
+          "title": "Scheduled Maintenance",
+          "description": "Automate maintenance schedules with notifications and complete history records.",
+          "icon": "Calendar"
+        }
+      ]
+    },
+    "howItWorks": {
+      "sectionLabel": "How It Works",
+      "title": "Only 3 steps to get started",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Register & Setup",
+          "description": "We help set up the system and import your existing asset data into the platform."
+        },
+        {
+          "number": "2",
+          "title": "Label & Scan",
+          "description": "Generate QR code labels and start scanning for fast digital asset registration."
+        },
+        {
+          "number": "3",
+          "title": "Manage & Report",
+          "description": "Manage assets and generate automatic KEWPA/KEWPS reports whenever needed."
+        }
+      ]
+    },
+    "testimonial": {
+      "quote": "This system makes our work easier. KEWPA reports that used to take 2 weeks are now completed in 1 hour.",
+      "name": "Mr. Ahmad Razif",
+      "role": "Asset Officer, Malaysian Army"
+    },
+    "features": {
+      "sectionLabel": "Features",
+      "title": "Everything you need",
+      "items": [
+        {
+          "title": "Interactive Dashboard",
+          "description": "Complete visual display of asset status, value, and maintenance in one view.",
+          "icon": "LayoutDashboard"
+        },
+        {
+          "title": "KEWPA Reports",
+          "description": "Generate BR, KEW.PA-2 to KEW.PA 17 reports automatically.",
+          "icon": "FileText"
+        },
+        {
+          "title": "KEWPS Reports",
+          "description": "Full support for KEW.PS 1 to KEW.PS-21.",
+          "icon": "FileCheck"
+        },
+        {
+          "title": "Mobile App",
+          "description": "Access the system from your phone to scan and update assets in the field.",
+          "icon": "Smartphone"
+        }
+      ]
+    },
+    "pricing": {
+      "sectionLabel": "Training Pricing",
+      "title": "Choose the plan that suits you",
+      "cta": "Book Slot",
+      "contact": "Contact Sales",
+      "plans": [
+        {
+          "name": "BASIC",
+          "price": "30,000",
+          "currency": "RM",
+          "description": "Perfect for individuals and small projects",
+          "features": [
+            "Advanced training (20 pax)",
+            "Simple automation tools",
+            "Basic support",
+            "3-month support",
+            "Standard Analytics"
+          ]
+        },
+        {
+          "name": "PRO",
+          "price": "49,600",
+          "currency": "RM",
+          "popular": true,
+          "description": "Ideal for growing businesses and teams",
+          "features": [
+            "Advanced training (25 pax)",
+            "Various tool development",
+            "Priority support",
+            "System integration",
+            "6-month priority support",
+            "Hands-on coaching"
+          ]
+        },
+        {
+          "name": "ENTERPRISE",
+          "price": "Custom",
+          "description": "For large-scale operations and high-volume users",
+          "features": [
+            "Unlimited participants",
+            "Enterprise solutions",
+            "24/7 Premium support",
+            "On-site consultancy",
+            "AI-Powered"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "sectionLabel": "FAQ",
+      "sectionTitle": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What is Tech-Lead Asset Management System?",
+          "answer": "Tech-Lead provides an asset management system fully compliant with KEWPA & KEWPS for Malaysian government agencies and corporations. The system helps manage asset registration, maintenance, disposal, and reporting digitally."
+        },
+        {
+          "question": "How do I get started with the system?",
+          "answer": "You can contact us through the demo form or WhatsApp to get a free system demonstration. We will discuss your requirements and provide a 7-day free trial access."
+        },
+        {
+          "question": "Does the system support QR Code & Barcode scanning?",
+          "answer": "Yes, our system fully supports QR Code and Barcode scanning for quick asset registration, location tracking, and inventory audits. You can scan using your mobile phone or a dedicated scanner."
+        },
+        {
+          "question": "Can the system be accessed via mobile phone?",
+          "answer": "Yes, our system has a mobile application available for download on Android and iOS. Users can access, scan, and update asset data from anywhere."
+        },
+        {
+          "question": "How secure is the data?",
+          "answer": "Your data is stored securely using SSL/TLS encryption. Our system complies with government data security standards and provides automatic backup and tiered access controls."
+        },
+        {
+          "question": "What technical support is provided?",
+          "answer": "We provide technical support via phone, email, WhatsApp, and on-site service for Enterprise packages. Our support team is available during business hours to assist with any issues."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Start managing your assets today",
+      "subtitle": "Try free for 7 days. No credit card required.",
+      "primary": "Start Free",
+      "secondary": "Contact Sales"
+    },
+    "testimonialsMarquee": {
+      "sectionLabel": "Testimonials",
+      "title": "What our customers are saying",
+      "items": [
+        {
+          "name": "Alex Rivera",
+          "role": "CTO at InnovateTech",
+          "quote": "The AI-driven analytics from #QuantumInsights have revolutionized our product development cycle. Insights are now more accurate and faster than ever.",
+          "avatar": "AR"
+        },
+        {
+          "name": "Samantha Lee",
+          "role": "Marketing Director at NextGen Solutions",
+          "quote": "Implementing #AIStream's customer prediction model has drastically improved our targeting strategy. Seeing a 50% increase in conversion rates!",
+          "avatar": "SL"
+        },
+        {
+          "name": "Raj Patel",
+          "role": "Founder & CEO at StartUp Grid",
+          "quote": "As a startup, we need to move fast and stay ahead. #CodeAI's automated coding assistant helps us do just that. Our development speed has doubled.",
+          "avatar": "RP"
+        },
+        {
+          "name": "Emily Chen",
+          "role": "Product Manager at Digital Wave",
+          "quote": "#VoiceGen's AI-driven voice synthesis has made creating global products a breeze. Localization is now seamless and efficient.",
+          "avatar": "EC"
+        },
+        {
+          "name": "Michael Brown",
+          "role": "Data Scientist at FinTech Innovations",
+          "quote": "Leveraging #DataCrunch's AI for our financial models has given us an edge in predictive accuracy. Our investment strategies are now powered by real-time data analytics.",
+          "avatar": "MB"
+        },
+        {
+          "name": "Linda Wu",
+          "role": "VP of Operations at LogiChain Solutions",
+          "quote": "#LogiTech's supply chain optimization tools have drastically reduced our operational costs. Efficiency and accuracy in logistics have never been better.",
+          "avatar": "LW"
+        }
+      ]
+    },
+    "howItWorksTitle": "Only <span class=\"text-red-500\">3 steps</span> to get started",
+    "singleTestimonial": {
+      "sectionLabel": "Testimonials",
+      "title": "what our customers say"
+    },
+    "stillHaveQuestions": "Still have questions? Email us at"
   }
 } 

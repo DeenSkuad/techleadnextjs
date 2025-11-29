@@ -110,6 +110,22 @@ const config = {
             transform: "translateX(calc(-100% - var(--gap)))",
           },
         },
+        "marquee-reverse": {
+          from: {
+            transform: "translateX(calc(-100% - var(--gap)))",
+          },
+          to: {
+            transform: "translateX(0)",
+          },
+        },
+        "marquee-vertical": {
+          from: {
+            transform: "translateY(0)",
+          },
+          to: {
+            transform: "translateY(calc(-100% - var(--gap)))",
+          },
+        },
         appear: {
           "0%": {
             opacity: "0",
@@ -190,6 +206,9 @@ const config = {
         "appear-zoom": "appear-zoom 0.6s forwards ease-out",
         "pulse-hover": "pulse-hover 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "radar-spin": "radar-spin 10s linear infinite",
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-reverse": "marquee-reverse var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
       },
       spacing: {
         container: "1280px",

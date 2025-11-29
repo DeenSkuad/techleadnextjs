@@ -32,7 +32,7 @@ export const navigationConfig: { mainNav: NavigationItem[] } = {
 
 export function getNavigationItems(locale: string | undefined): NavigationItems {
   if (!locale) {
-    locale = 'en'; // Default fallback
+    locale = 'ms'; // Default fallback
   }
   
   return {

@@ -8,12 +8,14 @@ import {
   MotionValue,
 } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/lib/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export const HeroParallax = ({
   works,
 }: {
   works: {
+    id: string;
     title: string;
     link: string;
     thumbnail: string;
@@ -75,7 +77,7 @@ export const HeroParallax = ({
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={product.id}
             />
           ))}
         </motion.div>
@@ -84,7 +86,7 @@ export const HeroParallax = ({
             <ProductCard
               product={product}
               translate={translateXReverse}
-              key={product.title}
+              key={product.id}
             />
           ))}
         </motion.div>
@@ -93,7 +95,7 @@ export const HeroParallax = ({
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={product.id}
             />
           ))}
         </motion.div>
@@ -103,18 +105,21 @@ export const HeroParallax = ({
 };
 
 export const Header = () => {
+  const t = useTranslations("heroParallax");
   return (
-    <motion.div
-    
-    >
+    <motion.div>
       <div className="left-0 top-0 mx-auto w-full max-w-7xl px-4 py-10 md:py-40">
+        {/* Badge */}
+        <div className="mb-6 inline-flex w-auto items-center space-x-2 rounded-full bg-red-500/10 px-2 py-1 ring-1 ring-red-500/30 whitespace-pre">
+          <div className="w-fit rounded-full bg-white px-4 py-0.5 text-center text-xl  font-medium text-red-400 sm:text-sm">
+            {t("badge")}
+          </div>
+        </div>
         <h1 className="text-2xl font-bold dark:text-white md:text-7xl">
-          The Ultimate <br /> development studio
+          {t("title")} <br /> {t("titleLine2")}
         </h1>
         <p className="mt-8 max-w-2xl text-base dark:text-neutral-200 md:text-xl">
-          We build beautiful products with the latest technologies and
-          frameworks. We are a team of passionate developers and designers that
-          love to build amazing products.
+          {t("description")}
         </p>
       </div>
     </motion.div>
@@ -126,6 +131,7 @@ export const ProductCard = ({
   translate,
 }: {
   product: {
+    id: string;
     title: string;
     link: string;
     description: string;
@@ -137,7 +143,6 @@ export const ProductCard = ({
     <motion.div
       style={{ x: translate }}
       whileHover={{ y: -20 }}
-      key={product.title}
       className="group/product border border-white/10 relative flex-shrink-0 w-[90vw] sm:w-[22rem] md:w-1/2 h-1/2 rounded-xl overflow-hidden shadow-md bg-neutral-900"
     >
       <Link href={product.link} className="block h-full w-full ">

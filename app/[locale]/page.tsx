@@ -1,4 +1,3 @@
-// "use client";
 // src/app/[locale]/page.tsx
 
 import { locales } from "@/lib/i18n/config";
@@ -6,9 +5,15 @@ import { getTranslations } from "next-intl/server";
 import Clients from "@/components/sections/clients/default";
 import { PageTransition } from "@/components/PageTransition";
 import Hero from "@/components/sections/hero/default";
-import Services from "@/components/sections/services/default";
 import Works from "@/components/sections/works/default";
-
+import { ProductsSlider } from "@/components/sections/home/products-slider";
+import { ServicesSection } from "@/components/sections/home/services-section";
+import { TrainingFormats } from "@/components/sections/home/training-formats";
+import { ServicePackages } from "@/components/sections/home/service-packages";
+import { PortfolioGrid } from "@/components/sections/home/portfolio-grid";
+import { TestimonialsMarquee } from "@/components/sections/home/testimonials-marquee";
+import { FAQSection } from "@/components/sections/home/faq-section";
+import CTADefault from "@/components/sections/cta/default";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({
@@ -26,11 +31,38 @@ export default async function LocalePage({
   return (
     <PageTransition>
       <main className="relative flex min-h-screen flex-col">
+        {/* 1. Hero - KEEP existing */}
         <Hero />
+
+        {/* 2. Products Slider - NEW with Swiper */}
+        <ProductsSlider />
+
+        {/* 3. Clients - KEEP existing */}
         <Clients />
-        {/* <Client /> */}
-        {/* <Services /> */}
+
+        {/* 4. Services - NEW */}
+        <ServicesSection />
+
+        {/* 5. Training Formats - NEW */}
+        <TrainingFormats />
+
+        {/* 6. Service Packages - NEW */}
+        <ServicePackages />
+
+        {/* 7. Portfolio - NEW */}
+        <PortfolioGrid />
+
+        {/* 8. Testimonials - NEW */}
+        <TestimonialsMarquee />
+
+        {/* 9. FAQ - NEW */}
+        <FAQSection />
+
+        {/* 10. Works - KEEP existing */}
         <Works />
+
+        {/* 11. CTA - KEEP existing */}
+        {/* <CTADefault /> */}
       </main>
     </PageTransition>
   );

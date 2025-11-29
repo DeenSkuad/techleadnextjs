@@ -33,9 +33,52 @@ All the components are in the `components` folder.
 This project is licensed under the [MIT License](https://github.com/launch-ui/launch-ui/blob/main/LICENSE.md).
 
 ## Todo
-1. Client logo
-2. Section Work & Page Work
-3. Page Our Work Translations BM/EN
-4. Product Page Content
-5. About Us Page Content
-6. About Us Page 
+
+
+
+### Feature Tambahan (Cadangan)
+7. **Cost Estimator / Quote Calculator** - Multi-step form untuk estimate kos projek
+   - Jenis aplikasi (Web, Mobile, PWA)
+   - Design complexity (Basic, Standard, Premium)
+   - Features diperlukan (Auth, E-commerce, Payment, Chat)
+   - Admin features (User Management, Reports)
+   - Industri/Sektor
+   - Contact info → Email result
+8. **Project Timeline Calculator** - Anggaran tempoh projek berdasarkan scope
+9. **Case Studies / Portfolio Detail Pages** - Page individual untuk setiap projek
+    - Challenge & Solution
+    - Technologies used
+    - Results & Metrics
+    - Client testimonial
+10. **Blog / Tech Insights** - Content marketing untuk SEO
+11. **Career / Join Us Page** - Untuk hiring
+12. **Interactive Services Comparison** - Jadual perbandingan packages/plans
+
+## Completed Updates (30 Nov 2024)
+
+### Asset Management Page
+- [x] Animated Marquee untuk Trusted By Logos dengan logo lebih besar
+- [x] Hero Badge design baru dengan style pill (badgeLabel + badgeText)
+- [x] FAQ section dikemaskini dengan soalan relevan (QR Code, Mobile, Keselamatan, Sokongan)
+
+### Homepage
+- [x] FAQ Section dengan Tabs + Accordion (3 kategori: General, Project & Development, Support)
+- [x] Testimonials dikemaskini dengan content umum (kerjasama, latihan, perisian)
+- [x] CTA Section dengan floating team member avatars (Razlan, Zahrin, Ammar, Din)
+
+### Hero Parallax
+- [x] Badge ditambah ("Kerja Kami" / "Our Work")
+- [x] Title & Description ditranslate (EN/MS)
+- [x] Content dikemaskini: "Digital Experiences Strategically Engineered To Perform"
+
+### Navbar
+- [x] WhatsApp button text menggunakan translation `navigation.talkToUs`
+
+### Translations (EN & MS)
+- [x] `heroParallax` - badge, title, titleLine2, description
+- [x] `faq` - 3 kategori dengan 13 soalan total
+- [x] `testimonials` - 5 testimoni baru
+- [x] `assetManagement.faq` - 6 soalan relevan
+- [x] `assetManagement.hero` - badgeLabel, badgeText
+- [x] `assetManagement.problem` - title, titleHighlight (fix highlight word)
+- [x] `products.hrms.heroImageAlt` & `products.ecommerce.heroImageAlt` - fix missing keys 

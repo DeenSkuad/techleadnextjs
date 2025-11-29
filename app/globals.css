@@ -75,6 +75,33 @@
   }
 }
 
+/* Swiper custom styles */
+.products-swiper .swiper-button-next,
+.products-swiper .swiper-button-prev {
+  color: hsl(var(--primary));
+  background: hsl(var(--card));
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid hsl(var(--border));
+}
+
+.products-swiper .swiper-button-next:after,
+.products-swiper .swiper-button-prev:after {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.products-swiper .swiper-pagination-bullet {
+  background: hsl(var(--muted-foreground));
+  opacity: 0.5;
+}
+
+.products-swiper .swiper-pagination-bullet-active {
+  background: hsl(var(--primary));
+  opacity: 1;
+}
+
 @layer utilities {
   .fade-x {
     mask-image: linear-gradient(

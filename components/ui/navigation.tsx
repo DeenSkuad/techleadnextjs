@@ -30,7 +30,7 @@ export default function Navigation() {
   const t = useTranslations();
   const scrollToSection = useScrollToSection();
   const params = useParams();
-  const locale = (params?.locale as string) || 'en';
+  const locale = (params?.locale as string) || 'ms';
 
   const navItems: NavigationItems = getNavigationItems(locale);
 

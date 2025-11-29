@@ -12,6 +12,7 @@ export default function works() {
 
 export const worksitem = [
   {
+    id: "satria-1",
     title: "Satria TD Apps",
     link: "#",
     description: "",
@@ -19,6 +20,7 @@ export const worksitem = [
       "/images/clients/banner/Satria_TD_Banner 1.png",
   },
   {
+    id: "satria-2",
     title: "Satria TD Apps",
     link: "#",
     description: "",
@@ -26,20 +28,23 @@ export const worksitem = [
       "/images/clients/banner/Satria_TD_Banner 2.png",
   },
   {
-    title: "Satria TD Apps",
+    id: "mhcotryze-1",
+    title: "MHCotryze",
     link: "#",
     description: "",
     thumbnail:
       "/images/clients/banner/mhcotryze_banner 1.png",
   },
   {
-    title: "Satria TD Apps",
+    id: "asset-1",
+    title: "Asset Management",
     link: "#",
     description: "",
     thumbnail:
       "/images/clients/banner/Assets_management.png",
   },
   {
+    id: "satria-3",
     title: "Satria TD Apps",
     link: "#",
     description: "",
@@ -47,20 +52,23 @@ export const worksitem = [
       "/images/clients/banner/Satria_TD_Banner 1.png",
   },
   {
-    title: "Satria TD Apps",
+    id: "asset-2",
+    title: "Asset Management",
     link: "#",
     description: "",
     thumbnail:
       "/images/clients/banner/Assets_management.png",
   },
   {
-    title: "Satria TD Apps",
+    id: "mhcotryze-2",
+    title: "MHCotryze",
     link: "#",
     description: "",
     thumbnail:
       "/images/clients/banner/mhcotryze_banner 1.png",
   },
   {
+    id: "satria-4",
     title: "Satria TD Apps",
     link: "#",
     description: "",
@@ -68,13 +76,15 @@ export const worksitem = [
       "/images/clients/banner/Satria_TD_Banner 2.png",
   },
   {
-    title: "Satria TD Apps",
+    id: "mhcotryze-3",
+    title: "MHCotryze",
     link: "#",
     description: "",
     thumbnail:
       "/images/clients/banner/mhcotryze_banner 1.png",
   },
   {
+    id: "satria-5",
     title: "Satria TD Apps",
     link: "#",
     description: "",
@@ -82,6 +92,7 @@ export const worksitem = [
       "/images/clients/banner/Satria_TD_Banner 2.png",
   },
   {
+    id: "satria-6",
     title: "Satria TD Apps",
     link: "#",
     description: "",
@@ -89,6 +100,7 @@ export const worksitem = [
       "/images/clients/banner/Satria_TD_Banner 1.png",
   },
   {
+    id: "satria-7",
     title: "Satria TD Apps",
     link: "#",
     description: "",
@@ -96,6 +108,7 @@ export const worksitem = [
       "/images/clients/banner/Satria_TD_Banner 2.png",
   },
   {
+    id: "satria-8",
     title: "Satria TD Apps",
     link: "#",
     description: "",
@@ -103,11 +116,11 @@ export const worksitem = [
       "/images/clients/banner/Satria_TD_Banner 1.png",
   },
   {
+    id: "satria-9",
     title: "Satria TD Apps",
     link: "#",
     description: "",
     thumbnail:
       "/images/clients/banner/Satria_TD_Banner 2.png",
   },
-  
 ];
