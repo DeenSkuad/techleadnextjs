@@ -13,6 +13,7 @@ import { ServicePackages } from "@/components/sections/home/service-packages";
 import { PortfolioGrid } from "@/components/sections/home/portfolio-grid";
 import { TestimonialsMarquee } from "@/components/sections/home/testimonials-marquee";
 import { FAQSection } from "@/components/sections/home/faq-section";
+import { StatsSection } from "@/components/sections/home/stats-section";
 import CTADefault from "@/components/sections/cta/default";
 
 export function generateStaticParams() {
@@ -35,22 +36,27 @@ export default async function LocalePage({
         <Hero />
 
         {/* 2. Products Slider - NEW with Swiper */}
-        <ProductsSlider />
+        {/* <ProductsSlider /> */}
 
         {/* 3. Clients - KEEP existing */}
         <Clients />
 
-        {/* 4. Services - NEW */}
-        <ServicesSection />
+        {/* 4. Stats/KPI - NEW */}
+        <StatsSection />
 
-        {/* 5. Training Formats - NEW */}
-        <TrainingFormats />
+        {/* 5. Portfolio - NEW */}
+        <PortfolioGrid />
+
+        {/* 5. Services - NEW */}
+        <ServicesSection />
 
         {/* 6. Service Packages - NEW */}
         <ServicePackages />
 
-        {/* 7. Portfolio - NEW */}
-        <PortfolioGrid />
+         {/* 5. Training Formats - NEW */}
+        <TrainingFormats />
+
+        
 
         {/* 8. Testimonials - NEW */}
         <TestimonialsMarquee />
@@ -59,7 +65,7 @@ export default async function LocalePage({
         <FAQSection />
 
         {/* 10. Works - KEEP existing */}
-        <Works />
+        {/* <Works /> */}
 
         {/* 11. CTA - KEEP existing */}
         {/* <CTADefault /> */}

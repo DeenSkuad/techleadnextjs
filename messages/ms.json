@@ -9,6 +9,8 @@
     "casestudies": "Kajian Kes",
     "ourwork": "Kerja Kami",
     "training": "Latihan",
+    "portfolio": "Portfolio",
+    "webhosting": "Web Hosting",
     "servicesDescription": "Terokai pelbagai perkhidmatan kami"
   },
   "heroParallax": {
@@ -65,7 +67,7 @@
     }
   },
   "hero": {
-    "badge": "Tersedia untuk projek baru",
+    "badge": "Bersedia untuk projek baru",
     "subtitle": "Rakan kongsi anda dalam",
     "title": "Penyelesaian teknologi",
     "description": "Pakar dalam perundingan, dan pembangunan laman web, aplikasi mudah alih, dan platform SaaS.",
@@ -477,7 +479,7 @@
     }
   },
   "packages": {
-    "sectionLabel": "Pakej Perkhidmatan",
+    "sectionLabel": "Pakej Perkhidmatan Traning",
     "sectionTitle": "Pilih Pelan Terbaik untuk Anda",
     "sectionSubtitle": "Pakej fleksibel yang boleh disesuaikan dengan keperluan organisasi",
     "cta": "Pilih Pakej",

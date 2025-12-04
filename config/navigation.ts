@@ -6,25 +6,33 @@ import { NavigationItem, NavigationItems } from '@/types/navigation';
 export const navigationConfig: { mainNav: NavigationItem[] } = {
   mainNav: [
     {
-      title: "About Us",
-      href: "/about-us",
+      title: "products",
+      href: "/products",
       isLink: true,
     },
-    // {
-    //   title: "casestudies",
-    //   href: "/case-studies",
-    //   isLink: true,
-    // },
     {
-      title: "Our Work",
-      // sectionId: "ourwork",
+      title: "services",
+      href: "/services",
+      isLink: true,
+    },
+    {
+      title: "portfolio",
       href: "/works",
       isLink: true,
-      isScroll: true,
     },
     {
-      title: "Training",
-      href: "/services/training/",
+      title: "training",
+      href: "/services/training",
+      isLink: true,
+    },
+    {
+      title: "webhosting",
+      href: "/services/webhosting",
+      isLink: true,
+    },
+    {
+      title: "aboutus",
+      href: "/about-us",
       isLink: true,
     },
   ]
